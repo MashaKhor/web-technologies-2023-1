@@ -1,4 +1,4 @@
-@import "./global.css";
+@import url("./global.css");
 @import "./fonts.css";
 @import "./utils.css";
 
@@ -8,4 +8,57 @@
 
 .test {
     color: red !important;
+}
+
+.paragraph {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+}
+
+.main-title {
+    font-size: 64px;
+    color: #1F3F68;
+}
+
+.inner-title {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 36px;
+    text-align: center;
+}
+
+.small-title {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+.form-input {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+.contacts-button {
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.form-contacts {
+    background-image: url(/images/form-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
