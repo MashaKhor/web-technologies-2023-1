@@ -57,6 +57,7 @@ body {
 
 .main-block {
     background-color: #ececec;
+    min-height: 500px;
 }
 
 .start-block {
