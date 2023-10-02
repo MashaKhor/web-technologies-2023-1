@@ -11,17 +11,21 @@ body {
 .main-header {
     width: 80%;
     background-color: #fff;
-    display: flex;
-    justify-content: space-between;
     position: fixed;
     left: 10%;
     top: 10px;
     border-radius: 5px;
-    box-shadow: 0 0 15px 1px #7c7c7c;
+    box-shadow: 0 0 15px 1px #d2d2d2;
+}
+
+.header-navigation {
+    display: flex;
+    justify-content: space-between;
 }
 
 .header-logo {
     text-transform: uppercase;
+    text-decoration: none;
     color: rgb(0, 136, 255);
     font-size: 20px;
     font-weight: 700;
@@ -56,10 +60,12 @@ body {
 }
 
 .start-block {
-    width: 800px;
-    padding-left: 130px;
-    padding-top: 130px;
-    padding-bottom: 200px;
+    width: 100%;
+    padding: 130px 700px 200px 130px;
+    background: url(/src/images/backgroung-start.png);
+    background-position: right 20%;
+    background-repeat: no-repeat;
+    margin: 0;
 }
 
 .big-title {
@@ -174,6 +180,14 @@ body {
 
 .project-list li {
     padding: 15px 0px;
+}
+
+.blocks-iteka-desc {
+    width: 1100px;
+    background: url(/src/images/i-teka-phone.png);
+    background-position: top right;
+    background-size: 450px;
+    background-repeat: no-repeat;
 }
 
 .project-iteka-list {
@@ -316,6 +330,14 @@ body {
 .our-team-list p {
     padding: 0;
     margin: 0;
+}
+
+.contacts-book {
+    width: 1100px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 40px;
 }
 
 .contacts-book-form-block {
