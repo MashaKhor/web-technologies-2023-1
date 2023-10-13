@@ -1,0 +1,138 @@
+@import "./style.css";
+
+@media screen and (width < 426px)
+{
+    .main-header {
+        width: 425px;
+        padding: 25px 147px 25px 17px;
+        left: 0;
+        top: 16px;
+    }
+
+    .three-line-open-menu {
+        display: block;
+        margin: auto 0;
+    }
+
+    .three-line-open-menu svg {
+        width: 40px;
+        height: 20px;
+    }
+
+    .header-logo {
+        padding: 0px;
+        margin: auto auto auto 91px;
+    }
+
+    .header-links {
+        display: none;
+    }
+
+    .big-title {
+        font-size: 28px;
+    }
+
+    .start-block {
+        width: 100%;
+        padding: 138px 10px 33px 24px;
+        background: url(/src/images/background-start-mobile.png);
+        background-position: right 20% top 337px;
+        background-repeat: no-repeat;
+    }
+
+    .block-form {
+        padding: 32px;
+        padding-right: 65px;
+        margin-top: 536px;
+        width: 382px;
+    }
+
+    .block-form h3 {
+        font-size: 16px;
+    }
+
+    .form-contacts {
+        width: 295px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 32px;
+        gap: 32px;
+    }
+
+    .form-contacts label {
+        display: block;
+    }
+
+    .form-button {
+        width: 155px;
+        text-align: left;
+        padding: 11px 24px;
+    }
+
+    .background-white {
+        padding: 0;
+    }
+
+    .development-info {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .blocks-center {
+        width: 100%;
+        padding: 32px 87px 52px 17px;
+    }
+
+    .development-info-text .development-paragraph {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .info-list {
+        margin: 0;
+    }
+
+    .development-info-text {
+        width: 321px;
+    }
+
+    .development-info-list {
+        width: 233px;
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .main-footer {
+        padding: 38px 36px 32px 36px;
+    }
+
+    .main-footer h2 {
+        margin-bottom: 55px;
+        font-size: 32px; 
+    }
+
+    .our-contacts-list {
+        width: 375px;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 45px;
+        grid-row-gap: 35px;
+    }
+
+    .our-contacts-list p {
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .our-contacts-list li {
+        width: 176px;
+    }
+
+    .footer-end-text {
+        margin: 0;
+        margin-top: 52px;
+        font-size: 13px;
+    }
+}
