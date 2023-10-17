@@ -1,0 +1,56 @@
+.big-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 144%;
+    letter-spacing: 0.326px;
+    margin: 0;
+}
+
+.main-text-block p{
+    font-family: "SF Pro Text";
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    margin-top: 24px;
+    margin-bottom: 64px;
+}
+
+.block-form h3 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.38px;
+    line-height: 24px;
+    letter-spacing: 0.38px;
+    margin: 0;
+}
+
+.form-contacts label {
+    display: block;
+    font-size: 13px;
+    color: #667085;
+    font-family: "SF Pro Text";
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.078px;
+}
+
+.main-footer h2{
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.154px;
+    margin: 0 auto;
+    width: 217px;
+    height: 24px;
+}
+
+.our-contacts-list p{
+    font-family: "SF Pro Text";
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    margin: 0;
+}
