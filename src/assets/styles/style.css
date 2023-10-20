@@ -1,30 +1,29 @@
 @import "./global.css";
 @import "./fonts.css";
 @import "./utils.css";
-
-body {
-    font-family: "Inter";
-    font-weight: 400;
-    margin: 0;
-}
-
-.three-line-open-menu {
-    display: none;
-}
+@import "./typography.css";
 
 .main-header {
     width: 1124px;
     background-color: #fff;
     position: fixed;
-    left: 10%;
-    top: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 15px 1px #d2d2d2;
+    left: 108px;
+    top: 24px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+    padding: 16px 24px;
 }
 
 .header-navigation {
     display: flex;
+    gap: 80px;
     justify-content: space-between;
+}
+
+.icon-header {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
 }
 
 .header-logo {
@@ -33,201 +32,254 @@ body {
     color: #2D66EE;
     font-size: 20px;
     font-weight: 700;
-    padding: 10px 25px;
-    margin: 0;
+    line-height: 18px;
+    width: 120px;
 }
 
 .header-links {
     display: flex;
     list-style-type: none;
-    padding: 10px 10px;
-    font-size: 15px;
+    font-family: "SF Pro Text";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.154px;
+    gap: 24px;
     margin: 0;
+    padding: 0;
 }
 
 .header-links li {
-    padding: 0px 10px;
-    margin: auto;
+    padding: 0;
+    display: flex;
+    margin: auto 0;
 }
 
-.header-links a {
+.header-links-black {
     text-decoration: none;
-    color: #000;
+    color: #101828;
+    margin: auto 0;
 }
 
-.header-links-blue a {
-    color: rgb(0, 136, 255);
-}
-
-.main-block {
-    background-color: #ececec;
-    min-height: 500px;
-}
-
-.start-block {
-    width: 100%;
-    padding: 160px 656px 248px 108px;
-    background: url(/src/images/backgroung-start.png);
-    background-position: right 20%;
-    background-repeat: no-repeat;
-    margin: 0;
-}
-
-.big-title {
-    font-size: 40px;
-}
-
-.main-text-blue {
+.blue-text {
     color: #2D66EE;
 }
 
-.block-form {
-    padding: 24px;
-    background-color: #fff;
-    border-radius: 10px;
-    margin-top: 64px;
-    width: 676px;
+.header-links-blue {
+    gap: 0;
 }
 
-.block-form h3 {
-    font-size: 20px;
-    margin: 0;
+.header-links-blue .links-telephone-1 {
+    margin-right: 16px;
+}
+
+.header-links-blue .links-telephone-2 {
+    margin-right: 32px;
+}
+
+.start-block {
+    height: 900px;
+}
+
+.start-block-background {
+    width: 1440px;
+    background: url(/src/images/backgroung-start.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.main-text-block {
+    padding-top: 160px;
+    width: 600px;
+}
+
+.block-form {
+    width: 676px;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .form-contacts {
-    margin-top: 32px;
     display: flex;
-    justify-content: space-between;
-}
-
-.form-contacts label {
-    display: block;
-    font-size: 14px;
-    color: #4d4d4d;
+    align-items: center;
+    gap: 24px;
 }
 
 .form-contacts input {
-    font-size: 15px;
+    width: 224px;
+    font-family: "SF Pro Text";
+    font-size: 17px;
     border: 0px;
-    border-bottom: 1px solid #d5d5d5;
-    padding-top: 15px;
+    border-bottom: 0.7px solid #D0D5DD;
     outline: none;
+    padding: 8px 0px;
 }
 
 .form-button {
-    background-color: rgb(0, 136, 255);
+    background-color: #2D66EE;
     color: #fff;
-    font-weight: 700;
+    font-family: "SF Pro Text";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.154px;
+    width: 132px;
     border: 0px;
-    border-radius: 10px;
+    border-radius: 8px;
     text-align: left;
-    padding: 0px 20px;
-}
-
-.blocks-center {
-    width: 100%;
-    padding: 80px 0px;
-    padding: 60px 0px;
+    padding: 11px 24px;
 }
 
 .development-info {
-    width: 961px;
     display: flex;
-    padding-left: 108px;
     gap: 128px;
+    padding: 80px 0px;
 }
 
 .development-info-text {
     width: 600px;
 }
 
-.development-info-text .development-paragraph {
-    margin: 30px 0px;
-    font-weight: 500;
+.development-info-text h3 {
+    font-family: "SF Pro Display";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.38px;
+    margin: 0;
 }
 
-.development-info-text h3 {
-    margin-top: 40px;
+.development-paragraph {
+    font-family: "SF Pro Text";
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    margin: 0;
+    margin-top: 32px;
+    margin-bottom: 34px;
+}
+
+.development-web-mobile {
+    font-family: "SF Pro Text";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    margin: 0;
+    margin-top: 16px;
+}
+
+.web-mobile-first {
+    margin-bottom: 32px;
 }
 
 .development-info-list {
     width: 233px;
-    margin: 0 auto;
+    font-family: "SF Pro Display";
     font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.38px;
 }
 
 .info-list {
-    list-style-type: none;
     padding: 0;
+    list-style-type: none;
+    margin: 0;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .info-list li {
-    padding: 13px 0px;
+    display: flex;
+    gap: 12px;
 }
 
 .info-list a {
-    color: #000;
     text-decoration: none;
+    color: #1D2939;
+    margin: auto 0;
 }
 
 .info-list a:hover {
-    font-weight: 700;
-    text-decoration: underline;
-    text-decoration-color: rgb(0, 136, 255);
+    color: #101828;
+    font-weight: 600;
+    margin-bottom: 4px;
+    border-bottom: 1px #2D66EE solid;
 }
 
-.background-white {
-    background-color: #fff;
+.icon-list-arrow {
+    width: 24px;
+    height: 24px;
+    margin: auto 0;
 }
 
 .main-footer {
-    width: 1224px;
-    margin: 0 auto;
-    background-color: rgb(26, 26, 35);
+    background-color: #101828;
     color: #fff;
     padding: 24px;
-    border-radius: 10px;
+    border-radius: 12px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
-.main-footer h2{
-    text-transform: uppercase;
-    font-size: 38px;
-    margin: 0;
-    margin-bottom: 40px;
+.icon-footer {
+    width: 24px;
+    height: 24px;
 }
 
 .our-contacts-list {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.our-contacts-list h3 {
+    margin: 0;
+    font-family: "SF Pro Text";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.154px;
+    color: #aeaeae;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .our-contacts-list li {
     width: 294px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
-.our-contacts-list h3 {
+.footer-paragpraph {
     margin: 0;
+    font-family: "SF Pro Text";
+    font-size: 13px;
     font-weight: 400;
-    font-size: 13px;
-    color: #aeaeae;
-    text-align: left;
+    line-height: 16px;
+    letter-spacing: -0.078px;
+    display: flex;
+    gap: 12px;
+    margin: 0 auto;
 }
 
-.our-contacts-list p{
-    font-weight: 500;
-    font-size: 17px;
-}
-
-.our-contacts-list a {
-    font-weight: 500;
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer-end-text {
-    font-size: 13px;
-    margin-top: 40px;
+.icon-footer-carta {
+    width: 32px;
+    height: 16px;
 }
