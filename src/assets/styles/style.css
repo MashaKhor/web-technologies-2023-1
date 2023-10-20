@@ -30,7 +30,7 @@ body {
 .header-logo {
     text-transform: uppercase;
     text-decoration: none;
-    color: rgb(0, 136, 255);
+    color: #2D66EE;
     font-size: 20px;
     font-weight: 700;
     padding: 10px 25px;
@@ -78,7 +78,7 @@ body {
 }
 
 .main-text-blue {
-    color: rgb(0, 136, 255);
+    color: #2D66EE;
 }
 
 .block-form {
