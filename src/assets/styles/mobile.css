@@ -3,15 +3,26 @@
 @media screen and (width < 426px)
 {
     .main-header {
-        width: 425px;
-        padding: 25px 147px 25px 17px;
+        width: 409px;
+        height: 90px;
         left: 0;
-        top: 16px;
+        padding: 0px 17px;
+        top: 20px;
+        border-radius: 12px;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .header-navigation {
+        gap: 91px;
     }
 
     .three-line-open-menu {
         display: block;
         margin: auto 0;
+        height: 20px;
     }
 
     .three-line-open-menu svg {
@@ -21,7 +32,7 @@
 
     .header-logo {
         padding: 0px;
-        margin: auto auto auto 91px;
+        letter-spacing: -0.154px;
     }
 
     .header-links {
@@ -30,6 +41,9 @@
 
     .big-title {
         font-size: 28px;
+        font-weight: 700;
+        line-height: 144%;
+        letter-spacing: 0.326px;
     }
 
     .start-block {
