@@ -9,9 +9,19 @@
         top: 16px;
     }
 
+    .header-navigation {
+        height: 40px;
+        gap: 0px;
+    }
+
     .three-line-open-menu {
         display: block;
         margin: auto 0;
+        margin-right: 233px;
+    }
+
+    .view-mobile, .view-dekstop {
+        display: none;
     }
 
     .three-line-open-menu svg {
@@ -21,31 +31,45 @@
 
     .header-logo {
         padding: 0px;
-        margin: auto 146px auto 233px;
-    }
-
-    .links-only-dekstop {
-        display: none;
-    }
-
-    .view-dekstop {
-        display: none;
+        margin: auto 0;
     }
 
     .header-links {
         padding: 0px;
+        margin-left: 118px;
     }
 
-    .header-links li {
-        padding: 0px;
+    .header-links-blue .links-telephone-1,
+    .header-links-blue .links-telephone-2 {
+        margin: 0;
+    }
+
+    .blocks-center {
+        width: 706px;
     }
 
     .start-block {
-        width: 100%;
-        padding: 138px 353px 32px 32px;
+        height: 762px;
+    }
+
+    .start-block-background {
+        width: 768px;
+        background-image: none;
         background: url(/src/images/background-start-tablet.png);
         background-position: right 20%;
         background-repeat: no-repeat;
+    }
+
+    .main-text-block {
+        padding-top: 138px;
+        width: 383px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .main-text-block p {
+        margin: 0;
     }
 
     .big-title {
@@ -54,7 +78,6 @@
 
     .block-form {
         padding: 32px;
-        padding-right: 65px;
         margin-top: 32px;
         width: 382px;
     }
@@ -65,38 +88,50 @@
 
     .form-contacts {
         width: 295px;
-        display: flex;
-        flex-direction: column;
+        align-items: start;
         flex-wrap: wrap;
-        margin-top: 32px;
+        margin: 0;
         gap: 32px;
     }
 
     .form-contacts label {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .form-contacts input {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: -0.408px;
+        border: 0px;
+        border-bottom: 0.7px solid #D0D5DD;
+        outline: none;
+        padding: 0px;
+        padding-bottom: 8px;
     }
 
     .form-button {
         width: 155px;
         text-align: left;
-        padding: 11px 24px;
-    }
-
-    .background-white {
-        padding: 0;
+        padding: 11px 19px;
+        padding-left: 24px;
     }
 
     .development-info {
         gap: 82px;
+        padding: 32px 0px;
     }
 
-    .blocks-center {
-        width: 100%;
-        padding: 32px;
+    .development-web-mobile {
+        font-size: 14px;
+        width: 277px;
     }
 
     .development-info-text {
-        width: 321px;
+        width: 322px;
     }
 
     .development-info-list {
@@ -106,18 +141,31 @@
     }
 
     .main-footer {
-        padding: 46px 21px 37px 56px;
+        padding: 0;
+        width: 768px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .main-footer h2 {
+        margin-top: 46px;
+        font-size: 36px; 
     }
 
     .our-contacts-list {
         padding: 0;
+        margin-left: 56px;
+        gap: 2px;
+        justify-content: start;
     }
 
-    .our-contacts-list-mail {
+    .our-contacts-list .our-contacts-list-mail {
         width: 156px;
+        text-align: left;
     }
 
-    .our-contacts-list li {
+    .our-contacts-list .our-contacts-list-long {
         width: 176px;
         text-align: left;
     }
@@ -126,7 +174,7 @@
         font-size: 14px;
     }
 
-    .footer-end-text {
-        margin: 0;
+    .footer-paragpraph {
+        margin-bottom: 37px;
     }
 }
