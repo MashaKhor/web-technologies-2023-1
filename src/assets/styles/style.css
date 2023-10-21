@@ -20,6 +20,18 @@
     justify-content: space-between;
 }
 
+.three-line-open-menu {
+    display: none;
+}
+
+.view-mobile {
+    display: none;
+}
+
+.view-tablet {
+    display: none;
+}
+
 .icon-header {
     width: 24px;
     height: 24px;
@@ -33,6 +45,7 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 18px;
+    letter-spacing: -0.154px;
     width: 120px;
 }
 
@@ -101,6 +114,7 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.16), 0px 0px 2px 0px rgba(0, 0, 0, 0.08);
 }
 
 .form-contacts {
