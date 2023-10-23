@@ -1,0 +1,29 @@
+body {
+    font-family: "Inter";
+    font-weight: 400;
+    margin: 0;
+}
+    
+.blocks-center {
+    width: 1224px;
+    margin: 0 auto;
+}
+    
+.main-block {
+    background-color: #F2F4F7;
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+    
+.background-white {
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+    
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
