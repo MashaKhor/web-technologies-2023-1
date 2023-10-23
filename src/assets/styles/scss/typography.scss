@@ -1,0 +1,58 @@
+$fontSFProText: "SF Pro Text";
+
+@mixin fontCharacteristic($fsize,
+$fweight, $lineheight, $letterspacing) {
+    font-size: $fsize;
+    font-weight: $fweight;
+    line-height: $lineheight;
+    letter-spacing: $letterspacing;
+}
+
+.big-title {
+    @include fontCharacteristic(36px, 700, 144%, 0.326px);
+    margin: 0;
+}
+
+.main-text-block {
+    p {
+        font-family: $fontSFProText;
+        @include fontCharacteristic(15px, 500, 20px, -0.24px);
+        margin-top: 24px;
+        margin-bottom: 64px;
+    }
+} 
+
+.block-form {
+    h3 {
+        @include fontCharacteristic(20px, 700, 24px, 0.38px);
+        margin: 0;
+        color: #101828;
+    }
+}
+
+.form-contacts {
+    label {
+        display: block;
+        @include fontCharacteristic(13px, 500, 16px, -0.078px);
+        color: #667085;
+        font-family: $fontSFProText;
+    }
+}
+
+.main-footer {
+    h2 {
+        text-transform: uppercase;
+        @include fontCharacteristic(36px, 700, 18px, -0.154px);
+        margin: 0 auto;
+        width: 217px;
+        height: 24px;
+    }
+}
+
+.our-contacts-list {
+    p{
+        font-family: $fontSFProText;
+        @include fontCharacteristic(17px, 600, 22px, -0.408px);
+        margin: 0;
+    }
+}
