@@ -1,0 +1,222 @@
+@import "./style.scss";
+
+$widthCenterBlock : 393px;
+
+@mixin setPaddingMargin ($padding, $margin) {
+    padding: $padding;
+    margin: $margin;
+}
+
+@media screen and (width < 426px)
+{
+    .main-header {
+        width: 409px;
+        height: 90px;
+        left: 0;
+        @include setPaddingMargin(0px 17px, 0);
+        top: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .header-navigation {
+        width: 409px;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 91px;
+    }
+
+    .three-line-open-menu {
+        display: block;
+        @include setPaddingMargin(0, auto 0);
+        height: 20px;
+
+        svg {
+            width: 40px;
+            height: 20px;
+        }
+    }
+
+    .view-tablet, .header-links {
+        display: none;
+    }
+
+    .header-logo {
+        @include setPaddingMargin(0, 0);
+    }
+
+    .blocks-center {
+        width: $widthCenterBlock;
+    }
+
+    .main-text-block {
+        padding-top: 138px;
+        margin-left: auto;
+        width: 383px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        p {
+            @include setPaddingMargin(0, 0);
+        }
+    }
+
+    .big-title {
+        font-size: 28px;
+    }
+
+    .start-block-background {
+        width: 425px;
+        background-image: none;
+        background: url(/src/assets/img/background-start-mobile.png);
+        background-position: right 20% top 337px;
+        background-repeat: no-repeat;
+    }
+
+    .background-start-image {
+        width: 500px;
+        left: 105px;
+        top: 350px;
+    
+        .background-start-left {
+            width: 235px;
+            animation: moveUp 60s linear infinite;
+            background-size: 235px;
+        }
+    
+        .background-start-right {
+            width: 140px;
+            right: 100px;
+            background-size: 140px;
+            animation: moveDown 60s infinite linear;
+        }
+    }
+
+    .start-block {
+        height: 1267px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 536px;
+    }
+
+    .block-form {
+        @include setPaddingMargin(32px, 0);
+        padding-right: 65px;
+        width: 393px;
+        height: 356px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        h3 {
+            font-size: 16px;
+        }
+    }
+
+    .form-contacts {
+        width: 295px;
+        align-items: start;
+        flex-wrap: wrap;
+        margin: 0;
+        gap: 32px;
+
+        label {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        input {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: -0.408px;
+            border: 0px;
+            border-bottom: 0.7px solid #D0D5DD;
+            outline: none;
+            @include setPaddingMargin(0, 0);
+            padding-bottom: 8px;
+        }
+    }
+
+    .form-button {
+        width: 155px;
+        text-align: left;
+        @include setPaddingMargin(11px 19px, 0);
+        padding-left: 24px;
+    }
+
+    .development-info {
+        flex-direction: column;
+        gap: 32px;
+        padding-top: 32px;
+    }
+
+    .development-paragraph {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .development-web-mobile {
+        font-size: 14px;
+        width: 275px;
+    }
+
+    .info-list {
+        @include setPaddingMargin(0, 0);
+        gap: 0;
+
+        li {
+            padding: 12px 0px;
+        }
+    }
+
+    .development-info-text {
+        width: 393px;
+    }
+
+    .development-info-list {
+        width: 233px;
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .main-footer {
+        padding: 0;
+        width: 425px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+
+        h2 {
+            margin-top: 38px;
+            font-size: 32px; 
+        }
+    }
+
+    .our-contacts-list {
+        width: 375px;
+        padding: 0;
+        margin-left: 36px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 45px;
+        grid-row-gap: 35px;
+
+        p {
+            text-align: left;
+            font-size: 14px;
+        }
+
+        li {
+            width: 176px;
+        }
+    }
+
+    .footer-paragpraph {
+        margin-bottom: 32px;
+    }
+}
