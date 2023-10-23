@@ -1,0 +1,201 @@
+@import "./style.scss";
+
+$widthCenterBlock: 706px;
+
+@mixin setPaddingMargin ($padding, $margin) {
+    padding: $padding;
+    margin: $margin;
+}
+
+@media screen and (width < 769px)
+{
+    .main-header {
+        width: 768px;
+        @include setPaddingMargin(25px 32px, 0);
+        left: 0;
+        top: 16px;
+    }
+
+    .header-navigation {
+        height: 40px;
+        gap: 0px;
+    }
+
+    .three-line-open-menu {
+        display: block;
+        @include setPaddingMargin(0, auto 0);
+        margin-right: 233px;
+
+        svg {
+            width: 59px;
+            height: 40px;
+        }
+    }
+
+    .view-mobile, .view-dekstop {
+        display: none;
+    }
+
+    .header-logo {
+        @include setPaddingMargin(0, auto 0);
+    }
+
+    .header-links {
+        padding: 0px;
+        margin-left: 118px;
+    }
+
+    .header-links-blue {
+        .links-telephone-1, .links-telephone-2  {
+            margin: 0;
+        }
+    }
+
+    .blocks-center {
+        width: $widthCenterBlock;
+    }
+
+    .start-block {
+        height: 762px;
+    }
+
+    .background-start-image {
+        width: 500px;
+        left: 445px;
+        top: -100px;
+        gap: 50px;
+    
+        .background-start-left {
+            width: 235px;
+            animation: moveUp 60s linear infinite;
+            background-size: 235px;
+        }
+    
+        .background-start-right {
+            width: 235px;
+            right: 75px;
+            background-size: 145px;
+            animation: moveDown 60s infinite linear;
+        }
+    }
+
+    .main-text-block {
+        padding-top: 138px;
+        width: 383px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .big-title {
+        font-size: 28px;
+    }
+
+    .block-form {
+        padding: 32px;
+        margin-top: 32px;
+        width: 382px;
+        position: relative;
+        z-index: 1;
+
+        h3 {
+            font-size: 16px;
+        }
+    }
+
+    .form-contacts {
+        width: 295px;
+        align-items: start;
+        flex-wrap: wrap;
+        margin: 0;
+        gap: 32px;
+
+        label {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        input {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: -0.408px;
+            border: 0px;
+            border-bottom: 0.7px solid #D0D5DD;
+            outline: none;
+            padding: 0px;
+            padding-bottom: 8px;
+        }
+    }
+
+    .form-button {
+        width: 155px;
+        text-align: left;
+        @include setPaddingMargin(11px 19px, 0);
+        padding-left: 24px;
+    }
+
+    .development-info {
+        gap: 82px;
+        padding: 32px 0px;
+    }
+
+    .development-web-mobile {
+        font-size: 14px;
+        width: 277px;
+    }
+
+    .development-info-text {
+        width: 322px;
+    }
+
+    .development-info-list {
+        width: 233px;
+        margin-top: 124px;
+        font-size: 20px;
+    }
+
+    .main-footer {
+        padding: 0;
+        width: 768px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        h2 {
+            margin-top: 46px;
+            font-size: 36px; 
+        }
+    }
+
+    .our-contacts-list {
+        padding: 0;
+        margin-left: 56px;
+        gap: 2px;
+        justify-content: start;
+
+        .our-contacts-list-mail {
+            width: 156px;
+            text-align: left;
+        }
+
+        .our-contacts-list-long {
+            width: 176px;
+            text-align: left;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .footer-paragpraph {
+        margin-bottom: 37px;
+    }
+}
