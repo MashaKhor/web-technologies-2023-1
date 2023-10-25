@@ -7,13 +7,97 @@ $widthCenterBlock: 706px;
     margin: $margin;
 }
 
+@mixin fontCharacteristic($fsize,
+$fweight, $lineheight, $letterspacing) {
+    font-size: $fsize;
+    font-weight: $fweight;
+    line-height: $lineheight;
+    letter-spacing: $letterspacing;
+}
+
 @media screen and (width < 769px)
 {
+    .header-tablet-mobile {
+        position: absolute;
+        background-color: #fff;
+        z-index: 100;
+        width: 768px;
+        padding: 143px 0px;
+        
+        .menu-mobile-tablet {
+            display: flex;
+            flex-direction: column;
+            gap: 38px;
+
+            .nav-mobile-tablet-close {
+                background: none;
+                border: none;
+                padding: 0;
+                position: absolute;
+                left: 589px;
+                top: 108px;
+
+                .icon-nav-close {
+                    width: 36px;
+                    height: 36px;
+                    margin: 12px;
+                }
+            }
+
+            .nav-header-logo {
+                font-size: 48px;
+                width: 289px;
+                height: 48px;
+                margin-left: 260px;
+            }
+
+            .nav-links-mobile-tablet {
+                @include setPaddingMargin(0, 0);
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+                align-items: center;
+
+                a {
+                    text-decoration: none;
+                    color: #101828;
+                    @include fontCharacteristic(36px, 400, 144%, 0.326px);
+
+                }
+            }
+
+            .nav-links-telephone {
+                display: flex;
+                flex-direction: row;
+                gap: 32px;
+                list-style-type: none;
+                @include setPaddingMargin(0, 0);
+                margin-top: 15px;
+                align-self: center;
+
+                li {
+                    display: flex;
+                }
+
+                a {
+                    color: #2D66EE;
+                    font-family: "SF Pro Text";
+                    @include fontCharacteristic(18px, 500, 18px, -0.154);
+                }
+            }
+        }
+    }
+
     .main-header {
         width: 768px;
         @include setPaddingMargin(25px 32px, 0);
         left: 0;
         top: 16px;
+    }
+
+    .paragraph-after-title {
+        width: 383px;
     }
 
     .header-navigation {
@@ -24,6 +108,9 @@ $widthCenterBlock: 706px;
     .three-line-open-menu {
         display: block;
         @include setPaddingMargin(0, auto 0);
+        background: none;
+        border: none;
+        padding: 0;
         margin-right: 233px;
 
         svg {
@@ -34,6 +121,10 @@ $widthCenterBlock: 706px;
 
     .view-mobile, .view-dekstop {
         display: none;
+    }
+
+    .view-tablet {
+        display: block;
     }
 
     .header-logo {
@@ -144,6 +235,7 @@ $widthCenterBlock: 706px;
     .development-info {
         gap: 82px;
         padding: 32px 0px;
+        padding-bottom: 50px;
     }
 
     .development-web-mobile {
@@ -161,8 +253,250 @@ $widthCenterBlock: 706px;
         font-size: 20px;
     }
 
+
+
+
+
+    .project-block {
+        padding: 45px 0px;
+
+        h2 {
+            width: 380px;
+        }
+
+        .projects-lists {
+            margin-top: 48px;
+        }
+
+        ul {
+            width: 601px;
+            height: 457px;
+
+            li {
+                width: 320px;
+            }
+        }
+    }
+
+    .project-one {
+        padding: 0px;
+        background-position: right top 383px;
+        background-size: 368.652px 225px;
+        height: 664px;
+
+        .project-one-subtitle {
+            font-size: 14px;
+            width: 456px;
+            margin-bottom: 26px;
+        }
+
+        .project-iteka-list {
+            display: flex;
+            flex-direction: column;
+            gap: 36px;
+            align-items: end;
+
+            ul {
+                gap: 0px;
+                width: 678px;
+                align-self: start;
+
+                li {
+                    padding: 15px;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .project-iteka-desc {
+            position: relative;
+            top: -85px;
+            height: 399px;
+
+            .iteka-desc {
+                gap: 33px;
+
+                .iteka-desc-text {
+                    font-size: 14px;
+                    width: 459px;
+                }
+    
+                .iteka-enum {
+                    font-size: 14px;
+                }
+    
+                .iteka-list-contacts {
+                    font-size: 14px;
+                    margin-left: 3px;
+                }
+
+                .list-analysis {
+                    .iteka-number-info {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .block-your-projects {
+        flex-direction: column;
+        gap: 32px;
+        padding-top: 22px;
+        padding-bottom: 32px;
+
+        .your-projects-text {
+            width: 344px;
+            gap: 32px;
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .your-projects-form-block {
+            margin: 0;
+            padding: 24px 24px;
+
+            .form-your-project {
+                width: 552px;
+                gap: 24px;
+
+                input {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+
+    .development-block {
+        padding: 32px 0px;
+        gap: 42px;
+
+        .development-applications {
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+            .application-text {
+                width: 680px;
+                padding-left: 26px;
+
+                &:not(:first-child) {
+                    margin-bottom: 0px;
+                }
+
+                &:nth-child(1) {
+                    height: 172px;
+                }
+
+                p {
+                    font-size: 14px;
+                    width: 504px;
+                }
+            }
+        }
+    }
+
+    .our-team-block {
+        padding: 38px 0px;
+        padding-bottom: 52px;
+
+        .our-team-text {
+
+            p {
+                font-size: 14px;
+                width: 414px;
+            }
+
+            .our-team-list {
+                margin-top: 472px;
+                margin-left: 32px;
+            }
+
+            .paragraph-our-team {
+                width: 614px;
+                margin-left: 32px;
+            }
+        }
+
+        .our-team-video {
+            position: relative;
+            right: 610px;
+            top: 147px;
+
+            img {
+                width: 707px;
+                height: 392px;
+            }
+        }
+    }
+
+    .block-book {
+        padding-top: 76px;
+        padding-bottom: 88px;
+
+        .block-form-book {
+            margin: 0;
+            margin-left: 40px;
+            gap: 53px;
+
+            h2 {
+                width: 455px;
+            }
+
+            .your-projects-form-block {
+                width: 335px;
+                margin: 0;
+
+                .form-book {
+                    width: 271px;
+                    justify-content: start;
+                    gap: 15px;
+
+                    input {
+                        font-size: 17px;
+                    }
+
+                    .label-email {
+                        width: 264px;
+    
+                        input {
+                            width: 264px;
+                        }
+                    }
+
+                    .button-book {
+                        margin-top: 17px;
+                    }
+                }
+            }
+        }
+
+        .form-book-image {
+            position: relative;
+            right: 220px;
+            top: 135px;
+
+            img {
+                width: 283px;
+            }
+        }
+    }
+
+    .block-faq {
+        padding-top: 22px;
+        padding-bottom: 35px;
+
+        .faq-question-list {
+            height: auto;
+            margin-left: 51px;
+        }
+    }
+
     .main-footer {
-        padding: 0;
+        @include setPaddingMargin(0, 0);
         width: 768px;
         display: flex;
         flex-direction: column;
