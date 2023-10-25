@@ -58,45 +58,16 @@
   src: url(/static/fonts/SF-Pro-Display-Bold.ttf) format("truetype");
   font-weight: 700;
 }
-body {
-  font-family: "Inter";
-  font-weight: 400;
-  margin: 0;
-}
-
-.blocks-center {
-  width: 1224px;
-  margin: 0 auto;
-}
-
-.main-block {
-  background-color: #F2F4F7;
-  min-height: 500px;
-  position: relative;
-  overflow: hidden;
-}
-
-.background-white {
-  background-color: #fff;
-  position: relative;
-  z-index: 1;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
 .big-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 144%;
   letter-spacing: 0.326px;
   margin: 0;
+  color: #101828;
 }
 
-.main-text-block p {
+.paragraph-after-title {
   font-family: "SF Pro Text";
   font-size: 15px;
   font-weight: 500;
@@ -104,6 +75,7 @@ body {
   letter-spacing: -0.24px;
   margin-top: 24px;
   margin-bottom: 64px;
+  width: 600px;
 }
 
 .block-form h3 {
@@ -145,6 +117,45 @@ body {
   margin: 0;
 }
 
+body {
+  font-family: "Inter";
+  font-weight: 400;
+  margin: 0;
+}
+
+.big-title-white {
+  color: #fff;
+}
+
+.blocks-center {
+  width: 1224px;
+  margin: 0 auto;
+}
+
+.main-block {
+  background-color: #F2F4F7;
+  min-height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-white {
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.background-blue {
+  background-color: #2D66EE;
+  color: #fff;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 .bold {
   font-family: "Inter", sans-serif;
   font-weight: 700;
@@ -153,6 +164,10 @@ body {
 .medium {
   font-family: "Inter", sans-serif;
   font-weight: 500;
+}
+
+.header-tablet-mobile {
+  display: none;
 }
 
 .main-header {
@@ -423,7 +438,459 @@ body {
   margin: auto 0;
 }
 
+.project-block {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+.project-block h2 {
+  width: 600px;
+}
+.project-block .projects-lists {
+  margin-top: 28px;
+}
+.project-block .project-list-icon {
+  width: 44px;
+  height: 44px;
+}
+.project-block ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-family: "SF Pro Text";
+  height: 280px;
+}
+.project-block ul li {
+  display: flex;
+  gap: 16px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  width: 401px;
+}
+.project-block ul li p {
+  margin: auto 0;
+}
+
+.project-one {
+  padding: 60px 0px;
+  background: url(/src/assets/img/iteka-phone.png) no-repeat;
+  background-position: right top 330px;
+}
+.project-one .project-one-subtitle {
+  margin-bottom: 58px;
+}
+.project-one .project-iteka-list {
+  margin-top: 0px;
+  display: flex;
+  gap: 162px;
+}
+.project-one .project-iteka-list ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 1px;
+}
+.project-one .project-iteka-list ul li {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  padding: 16px;
+}
+.project-one .project-iteka-list ul li .iteka-list-link {
+  color: #000;
+  text-decoration: none;
+}
+.project-one .project-iteka-list ul li .link-current {
+  font-weight: 500;
+  border-bottom: 2px solid #2D66EE;
+  padding-bottom: 4px;
+}
+.project-one .project-iteka-list .iteka-list-button {
+  width: 207px;
+  color: #fff;
+  padding: 11px 24px;
+  margin: auto 0;
+  text-decoration: none;
+  background-color: #2D66EE;
+  border-radius: 8px;
+  font-family: "SF Pro Text";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.154px;
+}
+
+.project-iteka-desc {
+  margin-top: 44px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.project-iteka-desc .iteka-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.project-iteka-desc .iteka-desc p, .project-iteka-desc .iteka-desc ul {
+  margin: 0;
+  font-family: "SF Pro Text";
+}
+.project-iteka-desc .iteka-desc .iteka-desc-text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.24px;
+}
+.project-iteka-desc .iteka-desc .iteka-enum {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.408;
+  color: #475467;
+}
+.project-iteka-desc .iteka-desc .iteka-list-contacts {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.24px;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 32px;
+  color: #101828;
+}
+.project-iteka-desc .iteka-desc .iteka-list-contacts li {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.project-iteka-desc .iteka-desc .iteka-list-contacts .icon-iteka {
+  width: 24px;
+  height: 24px;
+}
+.project-iteka-desc .iteka-desc .list-analysis {
+  display: flex;
+  gap: 48px;
+}
+.project-iteka-desc .iteka-desc .list-analysis .iteka-number-info {
+  color: #101828;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 144%;
+  letter-spacing: 0.326px;
+}
+.project-iteka-desc .iteka-desc .list-analysis .iteka-number-text {
+  font-family: "SF Pro Text";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.078px;
+  color: #667085;
+}
+.project-iteka-desc .iteka-desc .list-analysis li {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: start;
+}
+.project-iteka-desc .iteka-desc .iteka-ios-google {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 16px;
+}
+.project-iteka-desc .iteka-desc .iteka-ios-google .iteka-ios-link {
+  width: 148px;
+}
+.project-iteka-desc .iteka-desc .iteka-ios-google .iteka-android-link {
+  width: 136px;
+}
+
+.block-your-projects {
+  display: flex;
+  gap: 24px;
+  padding: 80px 0px;
+}
+.block-your-projects .your-projects-text {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.block-your-projects .your-projects-text p {
+  margin: 0;
+  font-family: "SF Pro Text";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.154px;
+}
+.block-your-projects .your-projects-form-block {
+  width: 600px;
+}
+.block-your-projects .your-projects-form-block .form-your-project {
+  flex-wrap: wrap;
+  justify-content: end;
+}
+.block-your-projects .your-projects-form-block .form-your-project label {
+  color: #667085;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0px;
+}
+.block-your-projects .your-projects-form-block .form-your-project input {
+  width: 264px;
+  padding-bottom: 8px;
+}
+.block-your-projects .your-projects-form-block .form-your-project .button-your-projects {
+  width: 178px;
+}
+
+.development-block {
+  padding: 80px 0px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+.development-block .development-applications {
+  height: 585px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 4px;
+  -moz-column-gap: 440px;
+       column-gap: 440px;
+}
+.development-block .development-applications .icon-development {
+  width: 48px;
+  height: 48px;
+}
+.development-block .development-applications .application-text {
+  width: 392px;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.08), 0px 0px 2px 0px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 172px;
+}
+.development-block .development-applications .application-text:not(:first-child) {
+  margin-bottom: 20px;
+}
+.development-block .development-applications .application-text:nth-child(1) {
+  height: 192px;
+  background: url(/src/assets/img/develop-background-1.png) no-repeat;
+  background-size: auto 100%;
+  background-position: right;
+}
+.development-block .development-applications .application-text:nth-child(2) {
+  background: url(/src/assets/img/develop-background-2.png) no-repeat;
+  background-size: auto 100%;
+  background-position: right;
+}
+.development-block .development-applications .application-text:nth-child(3) {
+  background: url(/src/assets/img/develop-background-3.png) no-repeat;
+  background-size: auto 100%;
+  background-position: right;
+}
+.development-block .development-applications .application-text:nth-child(4) {
+  background: url(/src/assets/img/develop-background-4.png) no-repeat;
+  background-size: auto 100%;
+  background-position: right;
+}
+.development-block .development-applications .application-text:nth-child(5) {
+  background: url(/src/assets/img/develop-background-5.png) no-repeat;
+  background-size: auto 100%;
+  background-position: right;
+}
+.development-block .development-applications .application-text:nth-child(6) {
+  background: url(/src/assets/img/develop-background-6.png) no-repeat;
+  background-size: auto 100%;
+  background-position: right;
+}
+.development-block .development-applications .application-text h3 {
+  margin: 0;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.development-block .development-applications .application-text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.24px;
+  margin: 0;
+}
+
+.our-team-block {
+  padding: 80px 0px;
+  display: flex;
+  gap: 21px;
+}
+.our-team-block .our-team-text {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.our-team-block .our-team-text p {
+  margin: 0;
+}
+.our-team-block .our-team-text .our-team-list {
+  padding: 0;
+  margin: 8px 0px;
+  list-style-type: none;
+  display: flex;
+  gap: 16px;
+}
+.our-team-block .our-team-text .our-team-list li {
+  width: 184px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.our-team-block .our-team-text .our-team-list h3 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 144%;
+  letter-spacing: 0.326;
+  padding: 0;
+  margin: 0;
+}
+.our-team-block .our-team-text .our-team-list p {
+  font-family: "SF Pro Text";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.24px;
+  padding: 0;
+  margin: 0;
+  color: #667085;
+}
+.our-team-block .our-team-video {
+  margin: 5px 0px;
+}
+.our-team-block .our-team-video img {
+  width: 603px;
+}
+
+.block-book {
+  padding: 34px 0px;
+  display: flex;
+  gap: 152px;
+}
+.block-book .block-form-book {
+  margin-top: 46px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.block-book .block-form-book .your-projects-form-block {
+  width: 600px;
+}
+.block-book .block-form-book .your-projects-form-block .form-book {
+  width: 552px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  row-gap: 0px;
+}
+.block-book .block-form-book .your-projects-form-block .form-book label {
+  display: flex;
+  flex-direction: column;
+  width: 264px;
+  padding: 16px 0px;
+}
+.block-book .block-form-book .your-projects-form-block .form-book label input {
+  width: 264px;
+  padding-bottom: 8px;
+}
+.block-book .block-form-book .your-projects-form-block .form-book .label-email {
+  width: 552px;
+}
+.block-book .block-form-book .your-projects-form-block .form-book .label-email input {
+  width: 552px;
+}
+.block-book .block-form-book .your-projects-form-block .form-book .button-book {
+  margin-top: 24px;
+  padding: 11px 24px;
+  width: 225px;
+}
+.block-book .block-form-book h2 {
+  color: #fff;
+}
+.block-book .form-book-image {
+  width: 343.848px;
+}
+
+.block-faq {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.block-faq .faq-question-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 430px;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+.block-faq .faq-question-list li {
+  width: 600px;
+  padding: 26px 0px;
+  border-bottom: 1px solid #D0D5DD;
+  border-top: 1px solid #D0D5DD;
+}
+.block-faq .faq-question-list li h3 {
+  font-family: "SF Pro Display";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.38px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.block-faq .faq-question-list li p {
+  margin: 0;
+  font-family: "SF Pro Text";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.32px;
+  width: 524px;
+  margin-top: 21px;
+}
+.block-faq .faq-question-list .icon-plus {
+  width: 60px;
+  height: 60px;
+}
+
 .main-footer {
+  margin-bottom: 48px;
   background-color: #101828;
   color: #fff;
   padding: 24px;
@@ -485,12 +952,84 @@ body {
 }
 
 @media screen and (width < 769px) {
+  .header-tablet-mobile {
+    position: absolute;
+    background-color: #fff;
+    z-index: 100;
+    width: 768px;
+    padding: 143px 0px;
+  }
+  .header-tablet-mobile .menu-mobile-tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+  }
+  .header-tablet-mobile .menu-mobile-tablet .nav-mobile-tablet-close {
+    background: none;
+    border: none;
+    padding: 0;
+    position: absolute;
+    left: 589px;
+    top: 108px;
+  }
+  .header-tablet-mobile .menu-mobile-tablet .nav-mobile-tablet-close .icon-nav-close {
+    width: 36px;
+    height: 36px;
+    margin: 12px;
+  }
+  .header-tablet-mobile .menu-mobile-tablet .nav-header-logo {
+    font-size: 48px;
+    width: 289px;
+    height: 48px;
+    margin-left: 260px;
+  }
+  .header-tablet-mobile .menu-mobile-tablet .nav-links-mobile-tablet {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+  }
+  .header-tablet-mobile .menu-mobile-tablet .nav-links-mobile-tablet a {
+    text-decoration: none;
+    color: #101828;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 144%;
+    letter-spacing: 0.326px;
+  }
+  .header-tablet-mobile .menu-mobile-tablet .nav-links-telephone {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+    align-self: center;
+  }
+  .header-tablet-mobile .menu-mobile-tablet .nav-links-telephone li {
+    display: flex;
+  }
+  .header-tablet-mobile .menu-mobile-tablet .nav-links-telephone a {
+    color: #2D66EE;
+    font-family: "SF Pro Text";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.154;
+  }
   .main-header {
     width: 768px;
     padding: 25px 32px;
     margin: 0;
     left: 0;
     top: 16px;
+  }
+  .paragraph-after-title {
+    width: 383px;
   }
   .header-navigation {
     height: 40px;
@@ -500,6 +1039,9 @@ body {
     display: block;
     padding: 0;
     margin: auto 0;
+    background: none;
+    border: none;
+    padding: 0;
     margin-right: 233px;
   }
   .three-line-open-menu svg {
@@ -508,6 +1050,9 @@ body {
   }
   .view-mobile, .view-dekstop {
     display: none;
+  }
+  .view-tablet {
+    display: block;
   }
   .header-logo {
     padding: 0;
@@ -600,6 +1145,7 @@ body {
   .development-info {
     gap: 82px;
     padding: 32px 0px;
+    padding-bottom: 50px;
   }
   .development-web-mobile {
     font-size: 14px;
@@ -613,8 +1159,195 @@ body {
     margin-top: 124px;
     font-size: 20px;
   }
+  .project-block {
+    padding: 45px 0px;
+  }
+  .project-block h2 {
+    width: 380px;
+  }
+  .project-block .projects-lists {
+    margin-top: 48px;
+  }
+  .project-block ul {
+    width: 601px;
+    height: 457px;
+  }
+  .project-block ul li {
+    width: 320px;
+  }
+  .project-one {
+    padding: 0px;
+    background-position: right top 383px;
+    background-size: 368.652px 225px;
+    height: 664px;
+  }
+  .project-one .project-one-subtitle {
+    font-size: 14px;
+    width: 456px;
+    margin-bottom: 26px;
+  }
+  .project-one .project-iteka-list {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    align-items: end;
+  }
+  .project-one .project-iteka-list ul {
+    gap: 0px;
+    width: 678px;
+    align-self: start;
+  }
+  .project-one .project-iteka-list ul li {
+    padding: 15px;
+    font-size: 14px;
+  }
+  .project-one .project-iteka-desc {
+    position: relative;
+    top: -85px;
+    height: 399px;
+  }
+  .project-one .project-iteka-desc .iteka-desc {
+    gap: 33px;
+  }
+  .project-one .project-iteka-desc .iteka-desc .iteka-desc-text {
+    font-size: 14px;
+    width: 459px;
+  }
+  .project-one .project-iteka-desc .iteka-desc .iteka-enum {
+    font-size: 14px;
+  }
+  .project-one .project-iteka-desc .iteka-desc .iteka-list-contacts {
+    font-size: 14px;
+    margin-left: 3px;
+  }
+  .project-one .project-iteka-desc .iteka-desc .list-analysis .iteka-number-info {
+    font-size: 20px;
+  }
+  .block-your-projects {
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 22px;
+    padding-bottom: 32px;
+  }
+  .block-your-projects .your-projects-text {
+    width: 344px;
+    gap: 32px;
+  }
+  .block-your-projects .your-projects-text p {
+    font-size: 14px;
+  }
+  .block-your-projects .your-projects-form-block {
+    margin: 0;
+    padding: 24px 24px;
+  }
+  .block-your-projects .your-projects-form-block .form-your-project {
+    width: 552px;
+    gap: 24px;
+  }
+  .block-your-projects .your-projects-form-block .form-your-project input {
+    font-size: 17px;
+  }
+  .development-block {
+    padding: 32px 0px;
+    gap: 42px;
+  }
+  .development-block .development-applications {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .development-block .development-applications .application-text {
+    width: 680px;
+    padding-left: 26px;
+  }
+  .development-block .development-applications .application-text:not(:first-child) {
+    margin-bottom: 0px;
+  }
+  .development-block .development-applications .application-text:nth-child(1) {
+    height: 172px;
+  }
+  .development-block .development-applications .application-text p {
+    font-size: 14px;
+    width: 504px;
+  }
+  .our-team-block {
+    padding: 38px 0px;
+    padding-bottom: 52px;
+  }
+  .our-team-block .our-team-text p {
+    font-size: 14px;
+    width: 414px;
+  }
+  .our-team-block .our-team-text .our-team-list {
+    margin-top: 472px;
+    margin-left: 32px;
+  }
+  .our-team-block .our-team-text .paragraph-our-team {
+    width: 614px;
+    margin-left: 32px;
+  }
+  .our-team-block .our-team-video {
+    position: relative;
+    right: 610px;
+    top: 147px;
+  }
+  .our-team-block .our-team-video img {
+    width: 707px;
+    height: 392px;
+  }
+  .block-book {
+    padding-top: 76px;
+    padding-bottom: 88px;
+  }
+  .block-book .block-form-book {
+    margin: 0;
+    margin-left: 40px;
+    gap: 53px;
+  }
+  .block-book .block-form-book h2 {
+    width: 455px;
+  }
+  .block-book .block-form-book .your-projects-form-block {
+    width: 335px;
+    margin: 0;
+  }
+  .block-book .block-form-book .your-projects-form-block .form-book {
+    width: 271px;
+    justify-content: start;
+    gap: 15px;
+  }
+  .block-book .block-form-book .your-projects-form-block .form-book input {
+    font-size: 17px;
+  }
+  .block-book .block-form-book .your-projects-form-block .form-book .label-email {
+    width: 264px;
+  }
+  .block-book .block-form-book .your-projects-form-block .form-book .label-email input {
+    width: 264px;
+  }
+  .block-book .block-form-book .your-projects-form-block .form-book .button-book {
+    margin-top: 17px;
+  }
+  .block-book .form-book-image {
+    position: relative;
+    right: 220px;
+    top: 135px;
+  }
+  .block-book .form-book-image img {
+    width: 283px;
+  }
+  .block-faq {
+    padding-top: 22px;
+    padding-bottom: 35px;
+  }
+  .block-faq .faq-question-list {
+    height: auto;
+    margin-left: 51px;
+  }
   .main-footer {
     padding: 0;
+    margin: 0;
     width: 768px;
     display: flex;
     flex-direction: column;
