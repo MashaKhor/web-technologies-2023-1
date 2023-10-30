@@ -24,7 +24,6 @@ $fweight, $lineheight, $letterspacing) {
     width: 1124px;
     background-color: #fff;
     position: fixed;
-    left: 108px;
     top: 24px;
     border-radius: 12px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
@@ -95,6 +94,7 @@ $fweight, $lineheight, $letterspacing) {
 
 .start-block {
     height: 900px;
+    margin: 0 auto;
 }
 
 @keyframes moveUp {
@@ -115,13 +115,16 @@ $fweight, $lineheight, $letterspacing) {
     }
 }
 
+.block-background {
+    margin-left: 51.5%;
+}
+
 .background-start-image {
     position: absolute;
     width: 900px;
     height: 1100px;
     z-index: 0;
     display: flex;
-    left: 735px;
     top: -100px;
     gap: 70px;
     overflow: hidden;
@@ -155,6 +158,8 @@ $fweight, $lineheight, $letterspacing) {
 }
 
 .block-form {
+    // position: absolute;
+    // z-index: 9;
     width: 676px;
     padding: 24px;
     background-color: #fff;
