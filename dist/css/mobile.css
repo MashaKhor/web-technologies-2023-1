@@ -255,13 +255,16 @@ body {
     background-position: 0 -300%;
   }
 }
+.block-background {
+  margin-left: 51.5%;
+}
+
 .background-start-image {
   position: absolute;
   width: 900px;
   height: 1100px;
   z-index: 0;
   display: flex;
-  left: 735px;
   top: -100px;
   gap: 70px;
   overflow: hidden;
