@@ -252,6 +252,8 @@ body {
 
 .start-block {
   height: 900px;
+  position: absolute;
+  z-index: 100;
 }
 
 @keyframes moveUp {
