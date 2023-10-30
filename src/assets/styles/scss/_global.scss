@@ -1,0 +1,38 @@
+body {
+    font-family: "Inter";
+    font-weight: 400;
+    margin: 0;
+}
+
+.big-title-white {
+    color: #fff;
+}
+    
+.blocks-center {
+    width: 1224px;
+    margin: 0 auto;
+}
+    
+.main-block {
+    background-color: #F2F4F7;
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+    
+.background-white {
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.background-blue {
+    background-color: #2D66EE;
+    color: #fff;
+}
+    
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
