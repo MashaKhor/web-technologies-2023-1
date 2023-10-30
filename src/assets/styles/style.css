@@ -7,7 +7,6 @@
     width: 1124px;
     background-color: #fff;
     position: fixed;
-    left: 108px;
     top: 24px;
     border-radius: 12px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
@@ -16,7 +15,6 @@
 
 .header-navigation {
     display: flex;
-    gap: 80px;
     justify-content: space-between;
 }
 
@@ -83,6 +81,7 @@
 
 .start-block-background {
     width: 1440px;
+    margin: 0 auto;
     background: url(/src/images/backgroung-start.png);
     background-position: right;
     background-repeat: no-repeat;
