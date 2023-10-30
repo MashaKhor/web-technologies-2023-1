@@ -159,7 +159,6 @@ body {
   width: 1124px;
   background-color: #fff;
   position: fixed;
-  left: 108px;
   top: 24px;
   border-radius: 12px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
@@ -237,6 +236,7 @@ body {
 
 .start-block {
   height: 900px;
+  margin: 0 auto;
 }
 
 @keyframes moveUp {
