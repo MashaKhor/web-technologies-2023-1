@@ -1,11 +1,15 @@
 @import "./style.css";
 
-@media screen and (width < 769px)
+@media screen and (width < 1440px)
 {
+    .block-header {
+        width: 768px;
+        margin: 0 auto;
+    }
+
     .main-header {
         width: 768px;
         padding: 25px 32px;
-        left: 0;
         top: 16px;
     }
 
