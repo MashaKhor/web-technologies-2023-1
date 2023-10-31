@@ -170,6 +170,11 @@ body {
   display: none;
 }
 
+.block-header {
+  width: 1224px;
+  margin: 0 auto;
+}
+
 .main-header {
   width: 1124px;
   background-color: #fff;
