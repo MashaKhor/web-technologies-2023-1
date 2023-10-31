@@ -7,7 +7,7 @@ $widthCenterBlock : 393px;
     margin: $margin;
 }
 
-@media screen and (width < 426px)
+@media screen and (width < 768px)
 {
     .header-tablet-mobile {
         width: 425px;
@@ -46,10 +46,14 @@ $widthCenterBlock : 393px;
         }
     }
 
+    .block-header {
+        width: 425px;
+        margin: 0 auto;
+    }
+
     .main-header {
         width: 409px;
         height: 90px;
-        left: 0;
         @include setPaddingMargin(0px 17px, 0);
         top: 20px;
         display: flex;
@@ -115,9 +119,12 @@ $widthCenterBlock : 393px;
         background-repeat: no-repeat;
     }
 
+    .block-background {
+        margin-left: 23%;
+    }
+
     .background-start-image {
         width: 500px;
-        left: 105px;
         top: 350px;
     
         .background-start-left {
