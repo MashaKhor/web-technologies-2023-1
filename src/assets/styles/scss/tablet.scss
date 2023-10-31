@@ -15,7 +15,7 @@ $fweight, $lineheight, $letterspacing) {
     letter-spacing: $letterspacing;
 }
 
-@media screen and (width < 769px)
+@media screen and (width < 1440px)
 {
     .header-tablet-mobile {
         position: absolute;
@@ -89,10 +89,14 @@ $fweight, $lineheight, $letterspacing) {
         }
     }
 
+    .block-header {
+        width: 768px;
+        margin: 0 auto;
+    }
+
     .main-header {
         width: 768px;
         @include setPaddingMargin(25px 32px, 0);
-        left: 0;
         top: 16px;
     }
 
@@ -144,6 +148,10 @@ $fweight, $lineheight, $letterspacing) {
 
     .blocks-center {
         width: $widthCenterBlock;
+    }
+
+    .block-background {
+        margin-left: 70%;
     }
 
     .start-block {
