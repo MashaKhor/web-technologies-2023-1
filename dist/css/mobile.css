@@ -170,6 +170,11 @@ body {
   display: none;
 }
 
+.block-header {
+  width: 1224px;
+  margin: 0 auto;
+}
+
 .main-header {
   width: 1124px;
   background-color: #fff;
@@ -954,7 +959,7 @@ body {
   height: 16px;
 }
 
-@media screen and (width < 426px) {
+@media screen and (width < 768px) {
   .header-tablet-mobile {
     width: 425px;
     padding: 98px 0px;
@@ -985,10 +990,13 @@ body {
   .header-tablet-mobile .menu-mobile-tablet .nav-links-telephone a {
     font-size: 14px;
   }
+  .block-header {
+    width: 425px;
+    margin: 0 auto;
+  }
   .main-header {
     width: 409px;
     height: 90px;
-    left: 0;
     padding: 0px 17px;
     margin: 0;
     top: 20px;
@@ -1046,9 +1054,11 @@ body {
     background-position: right 20% top 337px;
     background-repeat: no-repeat;
   }
+  .block-background {
+    margin-left: 23%;
+  }
   .background-start-image {
     width: 500px;
-    left: 105px;
     top: 350px;
   }
   .background-start-image .background-start-left {
