@@ -170,6 +170,11 @@ body {
   display: none;
 }
 
+.block-header {
+  width: 1224px;
+  margin: 0 auto;
+}
+
 .main-header {
   width: 1124px;
   background-color: #fff;
@@ -954,7 +959,7 @@ body {
   height: 16px;
 }
 
-@media screen and (width < 769px) {
+@media screen and (width < 1440px) {
   .header-tablet-mobile {
     position: absolute;
     background-color: #fff;
@@ -1024,11 +1029,14 @@ body {
     line-height: 18px;
     letter-spacing: -0.154;
   }
+  .block-header {
+    width: 768px;
+    margin: 0 auto;
+  }
   .main-header {
     width: 768px;
     padding: 25px 32px;
     margin: 0;
-    left: 0;
     top: 16px;
   }
   .paragraph-after-title {
@@ -1070,6 +1078,9 @@ body {
   }
   .blocks-center {
     width: 706px;
+  }
+  .block-background {
+    margin-left: 70%;
   }
   .start-block {
     height: 762px;
