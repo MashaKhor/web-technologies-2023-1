@@ -20,10 +20,6 @@ $fweight, $lineheight, $letterspacing) {
     margin: $margin;
 }
 
-.header-tablet-mobile {
-    display: none;
-}
-
 .block-header {
     width: 1224px;
     margin: 0 auto;
@@ -800,4 +796,8 @@ $fweight, $lineheight, $letterspacing) {
 .icon-footer-carta {
     width: 32px;
     height: 16px;
+}
+
+.header-tablet-mobile {
+    display: none;
 }
