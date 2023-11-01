@@ -10,7 +10,7 @@ $widthCenterBlock : 393px;
 @media screen and (width < 768px)
 {
     .header-tablet-mobile {
-        width: 425px;
+        width: 100%;
         padding: 98px 0px;
         padding-bottom: 60px;
 
@@ -18,13 +18,14 @@ $widthCenterBlock : 393px;
             gap: 25px;
 
             .nav-mobile-tablet-close {
-                left: 350px;
-                top: 10px;
+                top: 30px;
             }
 
             .nav-header-logo {
-                margin-left: 156px;
+                margin: 0 auto;
                 font-size: 20px;
+                width: 150px;
+                text-align: center;
             }
 
             .nav-links-mobile-tablet {
@@ -47,12 +48,12 @@ $widthCenterBlock : 393px;
     }
 
     .block-header {
-        width: 425px;
+        width: 100%;
         margin: 0 auto;
     }
 
     .main-header {
-        width: 409px;
+        width: 100%;
         height: 90px;
         @include setPaddingMargin(0px 17px, 0);
         top: 20px;
@@ -65,10 +66,9 @@ $widthCenterBlock : 393px;
     }
 
     .header-navigation {
-        width: 409px;
-        justify-content: flex-start;
+        width: 64%;
+        justify-content: space-between;
         align-items: center;
-        gap: 91px;
     }
 
     .three-line-open-menu {
@@ -91,13 +91,12 @@ $widthCenterBlock : 393px;
     }
 
     .blocks-center {
-        width: $widthCenterBlock;
+        width: 92%;
     }
 
     .main-text-block {
         padding-top: 138px;
-        margin-left: auto;
-        width: 383px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap: 24px;
@@ -152,7 +151,7 @@ $widthCenterBlock : 393px;
     .block-form {
         @include setPaddingMargin(32px, 0);
         padding-right: 65px;
-        width: 393px;
+        width: 100%;
         height: 356px;
         display: flex;
         flex-direction: column;
@@ -164,7 +163,7 @@ $widthCenterBlock : 393px;
     }
 
     .form-contacts {
-        width: 295px;
+        width: 100%;
         align-items: start;
         flex-wrap: wrap;
         margin: 0;
@@ -174,9 +173,11 @@ $widthCenterBlock : 393px;
             display: flex;
             flex-direction: column;
             gap: 8px;
+            width: 80%;
         }
 
         input {
+            width: 100%;
             font-size: 14px;
             font-style: normal;
             font-weight: 400;
@@ -224,7 +225,11 @@ $widthCenterBlock : 393px;
     }
 
     .development-info-text {
-        width: 393px;
+        width: 100%;
+
+        .development-web-mobile {
+            width: 70%;
+        }
     }
 
     .development-info-list {
@@ -245,11 +250,13 @@ $widthCenterBlock : 393px;
 
         .projects-lists {
             margin-top: 27px;
+            width: 100%;
         }
 
         ul {
-            width: 369px;
+            width: 100%;
             height: 457px;
+            column-gap: 5%;
 
             li {
                 font-size: 14px;
@@ -260,12 +267,12 @@ $widthCenterBlock : 393px;
 
     .project-one {
         padding: 0;
-        background-position: right top 247px;
+        background-position: center top 247px;
         background-size: 393px 225px;
         height: 1026px;
 
         .project-one-subtitle {
-            width: 339px;
+            width: 85%;
             margin-bottom: 32px;
         }
 
@@ -273,8 +280,8 @@ $widthCenterBlock : 393px;
             gap: 0px;
 
             ul {
-                gap: 0px;
-                width: 390px;
+                width: 90%;
+                justify-content: space-between;
                 align-self: start;
                 flex-wrap: wrap;
                 gap: 16px;
@@ -294,7 +301,7 @@ $widthCenterBlock : 393px;
                 padding: 11px 50px;
                 width: 259px;
                 position: relative;
-                right: 65px;
+                margin: 0 auto;
                 top: 696px;
             }
         }
@@ -303,13 +310,13 @@ $widthCenterBlock : 393px;
             position: block;
             margin-top: 333px;
             gap: 20px;
+            width: 100%;
 
             .iteka-desc {
                 gap: 20px;
 
                 .iteka-desc-text {
                     font-size: 14px;
-                    width: 393px;
                 }
 
                 .iteka-enum {
@@ -336,7 +343,7 @@ $widthCenterBlock : 393px;
         padding-bottom: 55px;
 
         .your-projects-text {
-            width: 344px;
+            width: 100%;
             gap: 32px;
 
             p {
@@ -347,20 +354,20 @@ $widthCenterBlock : 393px;
         .your-projects-form-block {
             margin: 0;
             padding: 36px 17px;
-            width: 393px;
+            width: 100%;
             height: auto;
 
             .form-your-project {
-                width: 359px;
                 gap: 16px;
                 justify-content: center;
 
                 label {
                     gap: 8px;
+                    width: 100%;
                 }
 
                 input {
-                    width: 359px;
+                    width: 100%;
                     font-size: 17px;
                 }
 
@@ -378,7 +385,7 @@ $widthCenterBlock : 393px;
         gap: 51px;
 
         h2 {
-            width: 309px;
+            width: 75%;
         }
 
         .development-applications {
@@ -390,6 +397,7 @@ $widthCenterBlock : 393px;
             .application-text {
                 padding: 24px;
                 height: auto;
+                width: 100%;
 
                 p {
                     font-size: 14px;
@@ -404,7 +412,7 @@ $widthCenterBlock : 393px;
                     height: 214px;
 
                     p {
-                        width: 270px;
+                        width: 80%;
                     }
                 }
 
@@ -413,7 +421,7 @@ $widthCenterBlock : 393px;
                     padding-bottom: 29px;
 
                     p {
-                        width: 180px;
+                        width: 50%;
                     }
                 }
 
@@ -421,7 +429,7 @@ $widthCenterBlock : 393px;
                     height: 195px;
 
                     p {
-                        width: 231px;
+                        width: 68%;
                     }
                 }
 
@@ -429,7 +437,7 @@ $widthCenterBlock : 393px;
                     height: 192px;
 
                     p {
-                        width: 200px;
+                        width: 65%;
                     }
                 }
 
@@ -437,7 +445,7 @@ $widthCenterBlock : 393px;
                     height: 207px;
 
                     p {
-                        width: 177px;
+                        width: 50%;
                     }
                 }
 
@@ -445,7 +453,7 @@ $widthCenterBlock : 393px;
                     height: 192px;
 
                     p {
-                        width: 187px;
+                        width: 55%;
                     }
                 }
             }
@@ -458,19 +466,21 @@ $widthCenterBlock : 393px;
 
         .our-team-text {
             gap: 20px;
+            width: 100%;
 
             p {
                 font-size: 14px;
-                width: 376px;
+                width: 93%;
             }
 
             .our-team-list {
                 margin-top: 285px;
                 margin-bottom: 0px;
-                gap: 35px;
+                width: 100%;
+                justify-content: space-between;
 
                 li {
-                    width: 100px;
+                    width: 180px;
                     gap: 10px;
                 }
 
@@ -480,15 +490,14 @@ $widthCenterBlock : 393px;
             }
 
             .paragraph-our-team {
-                width: 359px;
+                width: 93%;
                 margin: 0;
             }
         }
 
         .our-team-video {
-            position: relative;
-            right: 398px;
-            top: 140px;
+            position: absolute;
+            margin-top: 140px;
 
             img {
                 width: 392px;
@@ -500,35 +509,41 @@ $widthCenterBlock : 393px;
     .block-book {
         padding-top: 45px;
         padding-bottom: 56px;
+        flex-direction: column;
+        height: 923px;
 
         .block-form-book {
             margin: 0;
             margin-left: 30px;
             gap: 307px;
+            width: 100%;
 
             h2 {
-                width: 333px;
+                width: 90%;
             }
 
             .your-projects-form-block {
-                width: 335px;
+                width: 85%;
                 height: 431px;
                 margin: 0;
 
                 .form-book {
-                    width: 271px;
+                    width: 100%;
                     justify-content: start;
                     gap: 15px;
 
-                    input {
-                        font-size: 17px;
+                    label {
+                        width: 100%;
+
+                        input { 
+                            font-size: 17px;
+                            width: 100%;
+                        }
                     }
 
-                    .label-email {
-                        width: 264px;
-    
+                    .label-email {    
                         input {
-                            width: 264px;
+                            width: 100%;
                         }
                     }
 
@@ -541,8 +556,8 @@ $widthCenterBlock : 393px;
 
         .form-book-image {
             position: relative;
-            right: 405px;
-            top: 115px;
+            right: -110px;
+            top: -855px;            
 
             img {
                 width: 160px;
@@ -556,16 +571,16 @@ $widthCenterBlock : 393px;
         gap: 4px;
 
         .faq-question-list {
-            width: 393px;
+            width: 100%;
             height: auto;
 
             li {
-                width: 393px;
+                width: 100%;
                 padding: 29px 0px;
 
                 p {
                     font-size: 15px;
-                    width: 344px;
+                    width: 85%;
                 }
             }
         }
@@ -573,7 +588,7 @@ $widthCenterBlock : 393px;
 
     .main-footer {
         @include setPaddingMargin(0, 0);
-        width: 425px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap: 48px;
@@ -585,7 +600,7 @@ $widthCenterBlock : 393px;
     }
 
     .our-contacts-list {
-        width: 375px;
+        width: 90%;
         padding: 0;
         margin-left: 36px;
         display: grid;
