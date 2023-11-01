@@ -166,10 +166,6 @@ body {
   font-weight: 500;
 }
 
-.header-tablet-mobile {
-  display: none;
-}
-
 .block-header {
   width: 1224px;
   margin: 0 auto;
@@ -959,12 +955,16 @@ body {
   height: 16px;
 }
 
+.header-tablet-mobile {
+  display: none;
+}
+
 @media screen and (width < 1440px) {
   .header-tablet-mobile {
     position: absolute;
     background-color: #fff;
     z-index: 100;
-    width: 768px;
+    width: 100%;
     padding: 143px 0px;
   }
   .header-tablet-mobile .menu-mobile-tablet {
@@ -977,7 +977,7 @@ body {
     border: none;
     padding: 0;
     position: absolute;
-    left: 589px;
+    margin-left: 80%;
     top: 108px;
   }
   .header-tablet-mobile .menu-mobile-tablet .nav-mobile-tablet-close .icon-nav-close {
@@ -989,7 +989,7 @@ body {
     font-size: 48px;
     width: 289px;
     height: 48px;
-    margin-left: 260px;
+    margin: 0 auto;
   }
   .header-tablet-mobile .menu-mobile-tablet .nav-links-mobile-tablet {
     padding: 0;
@@ -1030,11 +1030,11 @@ body {
     letter-spacing: -0.154;
   }
   .block-header {
-    width: 768px;
+    width: 100%;
     margin: 0 auto;
   }
   .main-header {
-    width: 768px;
+    width: 100%;
     padding: 25px 32px;
     margin: 0;
     top: 16px;
@@ -1077,7 +1077,7 @@ body {
     margin: 0;
   }
   .blocks-center {
-    width: 706px;
+    width: 92%;
   }
   .block-background {
     margin-left: 58.5%;
@@ -1103,13 +1103,14 @@ body {
   }
   .main-text-block {
     padding-top: 138px;
-    width: 383px;
+    width: 55%;
     display: flex;
     flex-direction: column;
     gap: 24px;
   }
   .main-text-block p {
     margin: 0;
+    width: 100%;
   }
   .big-title {
     font-size: 28px;
@@ -1117,7 +1118,7 @@ body {
   .block-form {
     padding: 32px;
     margin-top: 32px;
-    width: 382px;
+    width: 55%;
     position: relative;
     z-index: 1;
   }
@@ -1125,7 +1126,7 @@ body {
     font-size: 16px;
   }
   .form-contacts {
-    width: 295px;
+    width: 50%;
     align-items: start;
     flex-wrap: wrap;
     margin: 0;
@@ -1156,16 +1157,16 @@ body {
     padding-left: 24px;
   }
   .development-info {
-    gap: 82px;
+    gap: 7.5%;
     padding: 32px 0px;
     padding-bottom: 50px;
   }
   .development-web-mobile {
     font-size: 14px;
-    width: 277px;
+    width: 75%;
   }
   .development-info-text {
-    width: 322px;
+    width: 50%;
   }
   .development-info-list {
     width: 233px;
@@ -1182,7 +1183,7 @@ body {
     margin-top: 48px;
   }
   .project-block ul {
-    width: 601px;
+    width: 92%;
     height: 457px;
   }
   .project-block ul li {
@@ -1196,7 +1197,7 @@ body {
   }
   .project-one .project-one-subtitle {
     font-size: 14px;
-    width: 456px;
+    width: 65%;
     margin-bottom: 26px;
   }
   .project-one .project-iteka-list {
@@ -1207,7 +1208,7 @@ body {
   }
   .project-one .project-iteka-list ul {
     gap: 0px;
-    width: 678px;
+    width: 100%;
     align-self: start;
   }
   .project-one .project-iteka-list ul li {
@@ -1218,13 +1219,14 @@ body {
     position: relative;
     top: -85px;
     height: 399px;
+    width: 65%;
   }
   .project-one .project-iteka-desc .iteka-desc {
     gap: 33px;
   }
   .project-one .project-iteka-desc .iteka-desc .iteka-desc-text {
     font-size: 14px;
-    width: 459px;
+    width: 100%;
   }
   .project-one .project-iteka-desc .iteka-desc .iteka-enum {
     font-size: 14px;
@@ -1243,7 +1245,7 @@ body {
     padding-bottom: 32px;
   }
   .block-your-projects .your-projects-text {
-    width: 344px;
+    width: 50%;
     gap: 32px;
   }
   .block-your-projects .your-projects-text p {
@@ -1252,9 +1254,10 @@ body {
   .block-your-projects .your-projects-form-block {
     margin: 0;
     padding: 24px 24px;
+    width: 85%;
   }
   .block-your-projects .your-projects-form-block .form-your-project {
-    width: 552px;
+    width: 100%;
     gap: 24px;
   }
   .block-your-projects .your-projects-form-block .form-your-project input {
@@ -1271,7 +1274,7 @@ body {
     gap: 32px;
   }
   .development-block .development-applications .application-text {
-    width: 680px;
+    width: 97%;
     padding-left: 26px;
   }
   .development-block .development-applications .application-text:not(:first-child) {
@@ -1282,28 +1285,37 @@ body {
   }
   .development-block .development-applications .application-text p {
     font-size: 14px;
-    width: 504px;
+    width: 70%;
   }
   .our-team-block {
     padding: 38px 0px;
     padding-bottom: 52px;
+    flex-direction: column;
+  }
+  .our-team-block .our-team-text {
+    width: 100%;
   }
   .our-team-block .our-team-text p {
     font-size: 14px;
-    width: 414px;
+    width: 57%;
   }
   .our-team-block .our-team-text .our-team-list {
     margin-top: 472px;
     margin-left: 32px;
+    width: 83%;
+    justify-content: space-between;
+  }
+  .our-team-block .our-team-text .our-team-list li {
+    width: 185px;
   }
   .our-team-block .our-team-text .paragraph-our-team {
-    width: 614px;
+    width: 82%;
     margin-left: 32px;
   }
   .our-team-block .our-team-video {
-    position: relative;
-    right: 610px;
-    top: 147px;
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 150px;
   }
   .our-team-block .our-team-video img {
     width: 707px;
@@ -1312,17 +1324,19 @@ body {
   .block-book {
     padding-top: 76px;
     padding-bottom: 88px;
+    gap: 22%;
   }
   .block-book .block-form-book {
     margin: 0;
     margin-left: 40px;
     gap: 53px;
+    width: 100%;
   }
   .block-book .block-form-book h2 {
     width: 455px;
   }
   .block-book .block-form-book .your-projects-form-block {
-    width: 335px;
+    width: 74%;
     margin: 0;
   }
   .block-book .block-form-book .your-projects-form-block .form-book {
@@ -1358,10 +1372,16 @@ body {
     height: auto;
     margin-left: 51px;
   }
+  .block-faq .faq-question-list li {
+    width: 90%;
+  }
+  .block-faq .faq-question-list li p {
+    width: 90%;
+  }
   .main-footer {
     padding: 0;
     margin: 0;
-    width: 768px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -1373,8 +1393,7 @@ body {
   .our-contacts-list {
     padding: 0;
     margin-left: 56px;
-    gap: 2px;
-    justify-content: start;
+    justify-content: space-between;
   }
   .our-contacts-list .our-contacts-list-mail {
     width: 156px;
