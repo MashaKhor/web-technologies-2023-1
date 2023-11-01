@@ -166,10 +166,6 @@ body {
   font-weight: 500;
 }
 
-.header-tablet-mobile {
-  display: none;
-}
-
 .block-header {
   width: 1224px;
   margin: 0 auto;
@@ -957,4 +953,8 @@ body {
 .icon-footer-carta {
   width: 32px;
   height: 16px;
+}
+
+.header-tablet-mobile {
+  display: none;
 }
