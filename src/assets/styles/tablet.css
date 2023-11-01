@@ -3,12 +3,12 @@
 @media screen and (width < 1440px)
 {
     .block-header {
-        width: 768px;
+        width: 100%;
         margin: 0 auto;
     }
 
     .main-header {
-        width: 768px;
+        width: 100%;
         padding: 25px 32px;
         top: 16px;
     }
@@ -49,7 +49,7 @@
     }
 
     .blocks-center {
-        width: 706px;
+        width: 92%;
     }
 
     .start-block {
@@ -57,7 +57,7 @@
     }
 
     .start-block-background {
-        width: 768px;
+        width: 100%;
         background-image: none;
         background: url(/src/images/background-start-tablet.png);
         background-position: right 20%;
@@ -66,7 +66,7 @@
 
     .main-text-block {
         padding-top: 138px;
-        width: 383px;
+        width: 55%;
         display: flex;
         flex-direction: column;
         gap: 24px;
@@ -74,6 +74,7 @@
 
     .main-text-block p {
         margin: 0;
+        width: 100%;
     }
 
     .big-title {
@@ -83,7 +84,7 @@
     .block-form {
         padding: 32px;
         margin-top: 32px;
-        width: 382px;
+        width: 55%;
     }
 
     .block-form h3 {
@@ -91,7 +92,7 @@
     }
 
     .form-contacts {
-        width: 295px;
+        width: 50%;
         align-items: start;
         flex-wrap: wrap;
         margin: 0;
@@ -125,17 +126,18 @@
     }
 
     .development-info {
-        gap: 82px;
+        gap: 7.5%;
         padding: 32px 0px;
+        padding-bottom: 50px;
     }
 
     .development-web-mobile {
         font-size: 14px;
-        width: 277px;
+        width: 75%;
     }
 
     .development-info-text {
-        width: 322px;
+        width: 50%;
     }
 
     .development-info-list {
@@ -146,7 +148,7 @@
 
     .main-footer {
         padding: 0;
-        width: 768px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap: 32px;
@@ -160,8 +162,7 @@
     .our-contacts-list {
         padding: 0;
         margin-left: 56px;
-        gap: 2px;
-        justify-content: start;
+        justify-content: space-between;
     }
 
     .our-contacts-list .our-contacts-list-mail {
