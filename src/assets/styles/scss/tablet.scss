@@ -21,7 +21,7 @@ $fweight, $lineheight, $letterspacing) {
         position: absolute;
         background-color: #fff;
         z-index: 100;
-        width: 768px;
+        width: 100%;
         padding: 143px 0px;
         
         .menu-mobile-tablet {
@@ -34,7 +34,7 @@ $fweight, $lineheight, $letterspacing) {
                 border: none;
                 padding: 0;
                 position: absolute;
-                left: 589px;
+                margin-left: 80%;
                 top: 108px;
 
                 .icon-nav-close {
@@ -48,7 +48,7 @@ $fweight, $lineheight, $letterspacing) {
                 font-size: 48px;
                 width: 289px;
                 height: 48px;
-                margin-left: 260px;
+                margin: 0 auto;
             }
 
             .nav-links-mobile-tablet {
@@ -90,12 +90,12 @@ $fweight, $lineheight, $letterspacing) {
     }
 
     .block-header {
-        width: 768px;
+        width: 100%;
         margin: 0 auto;
     }
 
     .main-header {
-        width: 768px;
+        width: 100%;
         @include setPaddingMargin(25px 32px, 0);
         top: 16px;
     }
@@ -147,7 +147,7 @@ $fweight, $lineheight, $letterspacing) {
     }
 
     .blocks-center {
-        width: $widthCenterBlock;
+        width: 92%;
     }
 
     .block-background {
@@ -179,13 +179,14 @@ $fweight, $lineheight, $letterspacing) {
 
     .main-text-block {
         padding-top: 138px;
-        width: 383px;
+        width: 55%;
         display: flex;
         flex-direction: column;
         gap: 24px;
 
         p {
             margin: 0;
+            width: 100%;
         }
     }
 
@@ -196,7 +197,7 @@ $fweight, $lineheight, $letterspacing) {
     .block-form {
         padding: 32px;
         margin-top: 32px;
-        width: 382px;
+        width: 55%;
         position: relative;
         z-index: 1;
 
@@ -206,7 +207,7 @@ $fweight, $lineheight, $letterspacing) {
     }
 
     .form-contacts {
-        width: 295px;
+        width: 50%;
         align-items: start;
         flex-wrap: wrap;
         margin: 0;
@@ -240,18 +241,18 @@ $fweight, $lineheight, $letterspacing) {
     }
 
     .development-info {
-        gap: 82px;
+        gap: 7.5%;
         padding: 32px 0px;
         padding-bottom: 50px;
     }
 
     .development-web-mobile {
         font-size: 14px;
-        width: 277px;
+        width: 75%;
     }
 
     .development-info-text {
-        width: 322px;
+        width: 50%;
     }
 
     .development-info-list {
@@ -259,10 +260,6 @@ $fweight, $lineheight, $letterspacing) {
         margin-top: 124px;
         font-size: 20px;
     }
-
-
-
-
 
     .project-block {
         padding: 45px 0px;
@@ -276,7 +273,7 @@ $fweight, $lineheight, $letterspacing) {
         }
 
         ul {
-            width: 601px;
+            width: 92%;
             height: 457px;
 
             li {
@@ -293,7 +290,7 @@ $fweight, $lineheight, $letterspacing) {
 
         .project-one-subtitle {
             font-size: 14px;
-            width: 456px;
+            width: 65%;
             margin-bottom: 26px;
         }
 
@@ -305,7 +302,7 @@ $fweight, $lineheight, $letterspacing) {
 
             ul {
                 gap: 0px;
-                width: 678px;
+                width: 100%;
                 align-self: start;
 
                 li {
@@ -319,13 +316,14 @@ $fweight, $lineheight, $letterspacing) {
             position: relative;
             top: -85px;
             height: 399px;
+            width: 65%;
 
             .iteka-desc {
                 gap: 33px;
 
                 .iteka-desc-text {
                     font-size: 14px;
-                    width: 459px;
+                    width: 100%;
                 }
     
                 .iteka-enum {
@@ -353,7 +351,7 @@ $fweight, $lineheight, $letterspacing) {
         padding-bottom: 32px;
 
         .your-projects-text {
-            width: 344px;
+            width: 50%;
             gap: 32px;
 
             p {
@@ -364,9 +362,11 @@ $fweight, $lineheight, $letterspacing) {
         .your-projects-form-block {
             margin: 0;
             padding: 24px 24px;
+            width: 85%;
 
             .form-your-project {
-                width: 552px;
+                width: 100%;
+                
                 gap: 24px;
 
                 input {
@@ -387,7 +387,7 @@ $fweight, $lineheight, $letterspacing) {
             gap: 32px;
 
             .application-text {
-                width: 680px;
+                width: 97%;
                 padding-left: 26px;
 
                 &:not(:first-child) {
@@ -400,7 +400,7 @@ $fweight, $lineheight, $letterspacing) {
 
                 p {
                     font-size: 14px;
-                    width: 504px;
+                    width: 70%;
                 }
             }
         }
@@ -409,29 +409,38 @@ $fweight, $lineheight, $letterspacing) {
     .our-team-block {
         padding: 38px 0px;
         padding-bottom: 52px;
+        flex-direction: column;
 
         .our-team-text {
+            width: 100%;
 
             p {
                 font-size: 14px;
-                width: 414px;
+                width: 57%;
             }
 
             .our-team-list {
                 margin-top: 472px;
                 margin-left: 32px;
+                width: 83%;
+                justify-content: space-between;
+
+                li {
+                    width: 185px;
+                }
             }
 
             .paragraph-our-team {
-                width: 614px;
+                width: 82%;
                 margin-left: 32px;
             }
         }
 
         .our-team-video {
-            position: relative;
-            right: 610px;
-            top: 147px;
+            position: absolute;
+            margin: 0 auto;
+            margin-top: 150px;
+
 
             img {
                 width: 707px;
@@ -443,18 +452,20 @@ $fweight, $lineheight, $letterspacing) {
     .block-book {
         padding-top: 76px;
         padding-bottom: 88px;
+        gap: 22%;
 
         .block-form-book {
             margin: 0;
             margin-left: 40px;
             gap: 53px;
+            width: 100%;
 
             h2 {
                 width: 455px;
             }
 
             .your-projects-form-block {
-                width: 335px;
+                width: 74%;
                 margin: 0;
 
                 .form-book {
@@ -499,12 +510,20 @@ $fweight, $lineheight, $letterspacing) {
         .faq-question-list {
             height: auto;
             margin-left: 51px;
+            
+            li {
+                width: 90%;
+
+                p {
+                    width: 90%;
+                }
+            }            
         }
     }
 
     .main-footer {
         @include setPaddingMargin(0, 0);
-        width: 768px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap: 32px;
@@ -518,8 +537,7 @@ $fweight, $lineheight, $letterspacing) {
     .our-contacts-list {
         padding: 0;
         margin-left: 56px;
-        gap: 2px;
-        justify-content: start;
+        justify-content: space-between;
 
         .our-contacts-list-mail {
             width: 156px;
