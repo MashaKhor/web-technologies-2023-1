@@ -36,6 +36,10 @@ $fweight, $lineheight, $letterspacing) {
     z-index: 10;
 }
 
+.header-tablet-mobile {
+    display: none;
+}
+
 .header-navigation {
     display: flex;
     gap: 80px;
@@ -796,8 +800,4 @@ $fweight, $lineheight, $letterspacing) {
 .icon-footer-carta {
     width: 32px;
     height: 16px;
-}
-
-.header-tablet-mobile {
-    display: none;
 }
