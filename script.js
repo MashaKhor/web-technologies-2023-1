@@ -14,32 +14,37 @@ function init() {
                 hasChildren: true,
                 items: [
                     {
-                        name: 'Ulgran1',
+                        name: 'Ulgran',
                         hasChildren: true,
                         items: [
                             {
-                                name: 'SMT1',
+                                name: 'проверка',
                                 hasChildren: false,
                                 items: []
                             },
                             {
-                                name: 'SMT2',
+                                name: 'Smth',
                                 hasChildren: false,
                                 items: []
                             }
                         ]
                     },
                     {
-                        name: 'Ulgran2',
+                        name: 'Vigro Mramor',
+                        hasChildren: false,
+                        items: []
+                    },
+                    {
+                        name: 'Handmade',
                         hasChildren: true,
                         items: [
                             {
-                                name: 'SMT3',
+                                name: 'Smth',
                                 hasChildren: false,
                                 items: []
                             },
                             {
-                                name: 'SMT4',
+                                name: 'Smth',
                                 hasChildren: false,
                                 items: []
                             }
@@ -51,20 +56,25 @@ function init() {
                 hasChildren: true,
                 items: [
                     {
-                        name: 'Ulgran3',
+                        name: 'Ulgran',
                         hasChildren: true,
                         items: [
                             {
-                                name: 'SMT5',
+                                name: 'Smth',
                                 hasChildren: false,
                                 items: []
                             },
                             {
-                                name: 'SMT6',
+                                name: 'Smth',
                                 hasChildren: false,
                                 items: []
                             }
                         ]
+                    },
+                    {
+                        name: 'Vigro Mramor',
+                        hasChildren: false,
+                        items: []
                     }
                 ]
             }
@@ -74,11 +84,8 @@ function init() {
 
     const items = new ListItems(document.getElementById('list-items'), data)
 
-
-  /*  items.render()*/
+    items.render()
     items.init()
-
-    /*console.log(items.renderTest(data));*/
 
     function ListItems(el, data) {
         this.el = el;
@@ -99,26 +106,33 @@ function init() {
         }
 
         this.renderParent = function (data) {
-            //проверка всех элементов на hasChildren
-            //если hasChildren, то запускаем renderParent
-            //если !hasChildren, то запускаем renderChildren
-            //возвращает рендер родительского элемента
+            let span = '<span>' + data.name + '</span>';
+            let elParent = '<div class="list-item list-item_open" data-parent><div class="list-item__inner">'
+            elParent += '<img class="list-item__arrow" src="img/chevron-down.png" alt="chevron-down" data-open>' +
+                '<img class="list-item__folder" src="img/folder.png" alt="folder">' + span + '</div>' +
+            '<div class="list-item__items">'
+            
+            data.items.forEach(item => {
+                if (item.hasChildren) 
+                    elParent+= this.renderParent(item);
+                else
+                    elParent+= this.renderChildren(item.name);
+            });
 
+            // нужно, чтобы закрыть два div сверху после добавление всех вложенных элементов
+            elParent += '</div> </div>';
+            return elParent
         }
 
-        this.renderChildren = function (data) {
-            //вовзращает рендер элемента без вложенности
+        this.renderChildren = function (name) {
+            let span = '<span>' + name + '</span>';
+            let elChild ='<div class="list-item__inner">' +
+            '<img class="list-item__folder" src="img/folder.png" alt="folder">'+ span + '</div>';
+            return elChild;
         }
 
         this.toggleItems = function (parent) {
             parent.classList.toggle('list-item_open')
         }
-
-/*        this.renderTest = function (data) {
-            return `
-            <div class="test">${data.name}</div>
-            `
-        }*/
     }
-
 }
