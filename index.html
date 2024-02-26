@@ -3,9 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/src/assets/styles/style.css">
+    <title>Пицца</title>
 </head>
 <body>
+    <div class="wrapper">
+        <div class="pizza-block">
+            <div class="pizza">
+                <img class="pizza-image" src="/src/assets/img/pepperoni.png" alt="Пупперони">
+                <span class="name-pizza">Пепперони</span>
+                <span class="price-pizza">800₽</span>
+                <div class="block-change-pizza">
+                    <div class="change-pizza remove-pizza">
+                        <button>-</button>
+                    </div>
+                    <div class="change-pizza add-pizza">
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pizza">
+                <img class="pizza-image" src="/src/assets/img/margaritta.png" alt="Пупперони">
+                <span class="name-pizza">Маргаритта</span>
+                <span class="price-pizza">500₽</span>
+                <div class="block-change-pizza">
+                    <div class="change-pizza remove-pizza">
+                        <button>-</button>
+                    </div>
+                    <div class="change-pizza add-pizza">
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pizza">
+                <img class="pizza-image" src="/src/assets/img/bavarskaya.jpg" alt="Пупперони">
+                <span class="name-pizza">Баварская</span>
+                <span class="price-pizza">700₽</span>
+                <div class="block-change-pizza">
+                    <div class="change-pizza remove-pizza">
+                        <button>-</button>
+                    </div>
+                    <div class="change-pizza add-pizza">
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-options">
+            <div class="block-size-pizza">
+                <div class="block-header-size">
+                    <span class="header-options header-size">Выберите размер</span>
+                    <div class="block-icon-info">
+                        <img class="icon-info" src="/src/assets/icons/icon-info.png" alt="Информация">
+                        <div class="info-size">
+                            <p>Большая пицца: +200₽, +200кКалл</p>
+                            <p>Маленькая пицца: +100₽, +100кКалл</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="size-pizza">
+                    <div class="size small-pizza">
+                        <p>Маленькая</p>
+                    </div>
+                    <div class="size big-pizza">
+                        <p>Большая</p>
+                    </div>
+                </div>
+                <span class="view-error">Сначала выберите пиццу</span>
+            </div>
+            <div class="block-topping-pizza">
+                <div class="header-options topping-header">
+                    Добавить по вкусу
+                </div>
+                <div class="toppins-all">
+                    <div class="topping">
+                        <img class="topping-image" src="/src/assets/img/cheese-board.png" alt="Сырный бортик">
+                        <span class="topping-name">Сырный бортик</span>
+                        <span class="topping-price">150₽/300₽</span>
+                        <div class="count-topping">
+                            <div class="change-topping remove-topping">
+                                <button>-</button>
+                            </div>
+                            <div class="change-topping add-topping">
+                                <button>+</button>
+                            </div>
+                            <p class="count-info"></p>
+                        </div>
+                    </div>
+                    <div class="topping">
+                        <img class="topping-image" src="/src/assets/img/mozarella.jpeg" alt="Сливочная моцарелла">
+                        <span class="topping-name">Сливочная моцарелла</span>
+                        <span class="topping-price">50₽/100₽</span>
+                        <div class="count-topping">
+                            <div class="change-topping remove-topping">
+                                <button>-</button>
+                            </div>
+                            <div class="change-topping add-topping">
+                                <button>+</button>
+                            </div>
+                            <p class="count-info"></p>
+                        </div>
+                    </div>
+                    <div class="topping">
+                        <img class="topping-image" src="/src/assets/img/chedder.jpg" alt="Чеддер и пармезан">
+                        <span class="topping-name">Чеддер и пармезан</span>
+                        <span class="topping-price">150₽/300₽</span>
+                        <div class="count-topping">
+                            <div class="change-topping remove-topping">
+                                <button>-</button>
+                            </div>
+                            <div class="change-topping add-topping">
+                                <button>+</button>
+                            </div>
+                            <p class="count-info"></p>
+                        </div>
+                    </div>
+                </div>
+                <span class="view-error-topping">Сначала выберите пиццу</span>
+            </div>
+        </div>
+        <div class="button-add">
+            <p>Добавить в корзину за</p>
+            <p class="button-price-cal">0 ₽ (0 кКалл)</p>
+        </div>
+    </div>
     <script src="src/index.js"></script>
 </body>
 </html>

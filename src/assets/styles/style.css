@@ -9,3 +9,251 @@
 .test {
     color: red !important;
 }
+
+.wrapper {
+    font-family: 'Inter';
+    display: flex;
+    column-gap: 50px;
+    row-gap: 120px;
+    flex-wrap: wrap;
+    padding: 50px 10px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.pizza-block {
+    display: flex;
+    gap: 25px;
+    padding: 40px 20px;
+}
+
+.pizza {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    box-shadow: 1px 5px 20px 10px rgb(230, 230, 230);
+    border-radius: 30px;
+    padding: 20px 10px;
+    height: 310px;
+}
+
+.name-pizza, .price-pizza {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0 auto;
+}
+
+.pizza-image {
+    width: 180px;
+    height: 180px;
+}
+
+.price-pizza {
+    font-size: 12px;
+}
+
+.block-change-pizza {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.change-pizza button, .change-topping button {
+    border: none;
+    background-color: #fff;
+    text-align: center;
+    font-size: 28px;
+}
+
+.change-pizza button:hover, .change-topping button:hover {
+    -webkit-text-shadow: 1px 0px 10px #3e3e3e;
+    -moz-text-shadow: 1px 0px 10px #3e3e3e;
+    text-shadow: 1px 0px 10px #3e3e3e;
+}
+
+.remove-pizza {
+    display: none;
+}
+
+.add-pizza {
+    margin-left: auto;
+}
+
+.block-options {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 400px;
+}
+
+.block-size-pizza {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header-options {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.block-header-size {
+    display: flex;
+}
+
+.block-icon-info {
+    margin: auto 0;
+    margin-left: auto;
+}
+
+.icon-info {
+    width: 25px;
+    height: 25px;
+}
+
+.info-size {
+    position: absolute;
+    left: 88%;
+    top: 25px;
+    z-index: 10;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    display: none;
+}
+
+.info-size p {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.size-pizza {
+    display: flex;
+    width: 100%;
+    background-color: rgb(234, 234, 234);
+    border-radius: 40px;
+}
+
+.size {
+    width: 50%;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 12px 0px;
+}
+
+.size p {
+    margin: auto 0;
+}
+
+.view-error, .view-error-topping {
+    position: absolute;
+    font-size: 12px;
+    color: red;
+    top: 160px;
+    font-weight: 500;
+    display: none;
+}
+
+.view-error-topping {
+    top: 500px;
+}
+
+.current-size {
+    background-color: #fff;
+    border-radius: 40px;
+    width: 48%;
+    height: 82%;
+    margin: auto;
+    box-shadow: 1px 4px 15px 10px rgba(206, 206, 206, 0.8);
+    padding: 9px 0px;
+}
+
+.block-topping-pizza {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.toppins-all {
+    display: flex;
+    gap: 15px;
+}
+
+.topping {
+    padding: 15px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 160px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 5px 20px 10px rgb(230, 230, 230);
+}
+
+.count-topping {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.change-topping button {
+    font-size: 18px;
+}
+
+.remove-topping {
+    display: none;
+}
+
+.add-topping {
+    margin-left: auto;
+}
+
+.count-info {
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    padding: 2px 0px;
+    background-color: rgb(175, 175, 175);
+    color: #fff;
+    border-radius: 100%;
+    display: none;
+}
+
+.topping-name, .topping-price {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.topping-price {
+    font-weight: 700;
+}
+
+.topping-image {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.button-add {
+    width: 400px;
+    background-color: rgb(255, 123, 0);
+    color: #fff;
+    padding: 15px 100px;
+    text-align: center;
+    border-radius: 50px;
+    margin-left: auto;
+    font-size: 18px;
+}
+
+.button-add p {
+    margin: 0;
+}
+
+.active {
+    display: block;
+}
