@@ -1,0 +1,46 @@
+@import "./fonts.css";
+
+.post {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+    margin: 0 auto;
+    font-family: 'Inter';
+}
+
+.post-items, .comments-post {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: black;
+    border: 2px solid black;
+    padding: 8px;
+}
+
+.title-post {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.content-post, .comment-item .name-comment {
+    font-size: 18px;
+}
+
+.other-post-info, .email-comment, .id-comment {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.comment-item {
+    border: 2px solid black;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.comment-item .name-comment {
+    font-weight: 700;    
+}
