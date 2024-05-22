@@ -28,6 +28,10 @@ const init = async () => {
         
         const todoCheckbox = document.createElement('input');
         todoCheckbox.setAttribute('type', 'checkbox');
+        todoCheckbox.checked = todo.completed;
+        todoCheckbox.onchange = async function(e) {
+            await updateStatusTodo(e, todo.id);
+        }
 
         const todoDesc = document.createElement('span');
         todoDesc.classList.add('todo_description');
@@ -45,17 +49,20 @@ const init = async () => {
         todoDiv.insertAdjacentElement("beforeend", todoDesc);
         todoDiv.insertAdjacentElement("beforeend", todoButton);
 
-        todoCheckbox.addEventListener('change', async (e) => {
-            const checkboxValue = e.target.checked;
-            e.target.checked = !e.target.checked;
-            const response = await Todos.updateById(todo.id, checkboxValue);
-            if (response) {
-                e.target.checked = !e.target.checked;
-            } else {
-                console.log('Не удалось отправить запрос.');
-            }
-        })
         return todoDiv;
+    }
+
+    const updateStatusTodo = async(e, todoId) => {
+        loading.start();
+        const checkboxValue = e.target.checked;
+        e.target.checked = !e.target.checked;
+        const response = await Todos.updateById(todoId, checkboxValue);
+        loading.stop();
+        if (response) {
+            e.target.checked = !e.target.checked;
+        } else {
+            console.log('Не удалось отправить запрос.');
+        }
     }
 
     const form = document.getElementById('add-form');
