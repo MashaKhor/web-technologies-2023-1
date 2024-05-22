@@ -16,60 +16,45 @@ echo ("<p><b>Задание 1</b></p>" . "<p>Результат = " . $result . 
 $a = 7;
 $result2 = "";
 
-// пыталась циклом, но почему-то выдавал ошибку
-switch ($a) {
+switch($a) {
     case 0:
-        $result2 = "0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15";
-        break;
-    case 1:
-        $result2 = "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15";
-        break;
-    case 2:
-        $result2 = "2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15";
-        break;
-    case 3:
-        $result2 = "3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15";
-        break;
-    case 4:
-        $result2 = "4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15";
-        break;
-    case 5:
-        $result2 = "5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15";
-        break;
-    case 6:
-        $result2 = "6, 7, 8, 9, 10, 11, 12, 13, 14, 15";
-        break;
-    case 7:
-        $result2 = "7, 8, 9, 10, 11, 12, 13, 14, 15";
-        break;
-    case 8:
-        $result2 = "8, 9, 10, 11, 12, 13, 14, 15";
-        break;
-    case 9:
-        $result2 = "9, 10, 11, 12, 13, 14, 15";
-        break;
-    case 10:
-        $result2 = "10, 11, 12, 13, 14, 15";
-        break;
-    case 11:
-        $result2 = "11, 12, 13, 14, 15";
-        break;
-    case 12:
-        $result2 = "12, 13, 14, 15";
-        break;
-    case 13:
-        $result2 = "13, 14, 15";
-        break;
-    case 14:
-        $result2 = "14, 15";
-        break;
-    case 15:
-        $result2 = "15";
-        break;
-    default:
-        $result2 = "Значение не входит в промежуток";
-        break;
+            $result2 .= "0 ";
+        case 1:
+            $result2 .= "1 ";
+        case 2:
+            $result2 .= "2 ";
+        case 3:
+            $result2 .= "3";
+        case 4:
+            $result2 .= "4 ";
+        case 5:
+            $result2 .= "5 ";
+        case 6:
+            $result2 .= "6 ";
+        case 7:
+            $result2 .= "7 ";
+        case 8:
+            $result2 .= "8 ";
+        case 9:
+            $result2 .= "9 ";
+        case 10:
+            $result2 .= "10 ";
+        case 11:
+            $result2 .= "11 ";
+        case 12:
+            $result2 .= "12 ";
+        case 13:
+            $result2 .= "13 ";
+        case 14:
+            $result2 .= "14 ";
+        case 15:
+            $result2 .= "15";
+            break;
+        default:
+            $result2 = "Значение не входит в промежуток";
+            break;
 }
+
 echo ("<p><b>Задание 2</b></p>" . "<p>Результат = " . $result2 . "</p>");
 
 //Задание 3
