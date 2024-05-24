@@ -1,4 +1,8 @@
-<?php 
+<?php
+    include "logGallery.php";
+
+    addInLog();
+
     include_once '../engine/ImageResize.php';
     include_once '../engine/ImageResizeException.php';
     use \Gumlet\ImageResize;
@@ -16,11 +20,17 @@
         if (fileIsCorrect($_FILES["myfile"])) {
             $path = BIG_DIR . basename($_FILES["myfile"]["name"]);
             if (move_uploaded_file($_FILES["myfile"]["tmp_name"], $path)) {
-                $imageSmall = new ImageResize($path);
-              
-                $pathSmall = SMALL_DIR . basename($_FILES["myfile"]["name"]);
-                $imageSmall -> resizeToWidth(200);
-                $imageSmall -> save($pathSmall);
+                if ($_FILES["myfile"]["type"] == "image/jpeg") {
+                    $imageSmall = imagecreatefromjpeg($path);
+                    $imageSmallScale = imagescale($imageSmall , 300);
+                    imagejpeg($imageSmallScale, SMALL_DIR . $_FILES["myfile"]["name"]);
+                } else if ($_FILES["myfile"]["type"] == "image/png"){
+                    $imageSmall = imagecreatefrompng($path);
+                    $imageSmallScale = imagescale($imageSmall , 300);
+                    imagepng($imageSmallScale, SMALL_DIR . $_FILES["myfile"]["name"]);
+                } else {
+                    $message = "error";
+                }
 
                 $message = "ok";
             }
@@ -32,7 +42,7 @@
             $message = "error";
         }
 
-        header("Location: /?page=gallery&status=" . $message);
+        header("Location: gallery.php");
         die();
     }
 
@@ -63,7 +73,7 @@
         foreach($picturesSmall as $pictureSmall) {
             $pictureBig = $picturesBig[array_search($pictureSmall, $picturesBig)];
             echo '<a target="_blank" href="' . BIG_DIR . $pictureBig . '">
-            <img src="' . BIG_DIR . $pictureSmall . '" alt="Картинка"></a>';
+            <img src="' . SMALL_DIR . $pictureSmall . '" alt="Картинка"></a>';
         }
     }
 ?>
@@ -74,16 +84,20 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <link rel="stylesheet" href="../public/css/style.css">
 </head>
 <body>
 <?= $message ?><br>
-<form method="post" enctype="multipart/form-data">
+<form class="form-add-picture" method="post" enctype="multipart/form-data">
+    <div>Загрузите новую картинку!</div>
     <input type="file" name="myfile">
-    <input type="submit" value="Загрузить">
+    <input class="button" type="submit" value="Загрузить">
 </form>
 
-<?php
-    getPictures();
-?>
+<div class="gallery">
+    <?php
+        getPictures();
+    ?>
+</div>
 </body>
 </html>
