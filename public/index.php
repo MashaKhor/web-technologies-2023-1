@@ -37,6 +37,7 @@ switch ($page) {
 
     case 'gallery':
         $params['title'] = 'Галерея';
+        $params['pictures'] = getPictures();
         break;
 
     case 'apicatalog':

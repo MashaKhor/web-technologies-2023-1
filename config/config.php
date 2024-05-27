@@ -6,5 +6,6 @@ include "../engine/bux.php";
 include "../engine/functions.php";
 include "../engine/catalog.php";
 include "../engine/log.php";
+include "../engine/gallery.php";
 include_once '../engine/ImageResize.php';
 include_once '../engine/ImageResizeException.php';
