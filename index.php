@@ -2,17 +2,17 @@
     include "db.php";
 
     function getItems($db) {
-        if ($db = false) {
+        if ($db == false) {
             echo 'Не удалось подключиться к базе данных <br>';
             echo mysqli_connect_error();
             exit();
         }
 
-        $result = @mysqli_query($db, "SELECT * FROM 'listitem'");
+        $result = mysqli_query($db, "SELECT * FROM listitem");
         $arrayResult = [];
 
         if (isset($result)) {
-            while ($row = mysqli_fetch_assoc($result)) {
+            while ($row = @mysqli_fetch_assoc($result)) {
                 array_push($arrayResult, $row);
             }
 

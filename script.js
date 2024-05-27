@@ -6,10 +6,8 @@ if (document.readyState === 'loading') {
 
 function init() {
     const data = null;
+    const items = new ListItems(document.getElementById('list-items'), data);
 
-    const items = new ListItems(document.getElementById('list-items'), data)
-
-    items.render()
     items.init()
 
     function ListItems(el, data) {
@@ -24,36 +22,6 @@ function init() {
 
                 open.addEventListener('click', () => this.toggleItems(parent) )
             })
-        }
-
-        this.render = function () {
-            this.el.insertAdjacentHTML('beforeend', this.renderParent(this.data))
-        }
-
-        this.renderParent = function (data) {
-            let span = '<span>' + data.name + '</span>';
-            let elParent = '<div class="list-item list-item_open" data-parent><div class="list-item__inner">'
-            elParent += '<img class="list-item__arrow" src="img/chevron-down.png" alt="chevron-down" data-open>' +
-                '<img class="list-item__folder" src="img/folder.png" alt="folder">' + span + '</div>' +
-            '<div class="list-item__items">'
-
-            data.items.forEach(item => {
-                if (item.hasChildren)
-                    elParent+= this.renderParent(item);
-                else
-                    elParent+= this.renderChildren(item.name);
-            });
-
-            // нужно, чтобы закрыть два div сверху после добавление всех вложенных элементов
-            elParent += '</div> </div>';
-            return elParent
-        }
-
-        this.renderChildren = function (name) {
-            let span = '<span>' + name + '</span>';
-            let elChild ='<div class="list-item__inner">' +
-            '<img class="list-item__folder" src="img/folder.png" alt="folder">'+ span + '</div>';
-            return elChild;
         }
 
         this.toggleItems = function (parent) {
